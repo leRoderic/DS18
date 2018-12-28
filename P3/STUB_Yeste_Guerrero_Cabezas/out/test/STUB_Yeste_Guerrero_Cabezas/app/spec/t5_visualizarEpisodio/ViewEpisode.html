@@ -1,0 +1,41 @@
+<html xmlns:c="http://www.concordion.org/2007/concordion">
+<head>
+    <title>US5 - Visualizar Episodio</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>US5 - Visualizar Episodio</h1>
+<p>
+    <b>COMO</b> <span style="color:Blue;">[Usuario registrado y logeado]</span>
+    <b>QUIERO</b> <span style="color:Blue;">[Visualizar un episodio]</span>
+    <b>PARA</b> <span style="color:Blue;">[Entretenerme]</span>
+</p>
+<div c:example="CheckViewEpisode">
+    <h3>T5.1 - Episodio no Visualizado</h3>
+    <p>El sistema solamente reproduce los episodios seleccionados para ver por el usuario. Por tanto, escogeremos algunos episodios para ver
+       y dejaremos otros sin ver.</p>
+    <p>Dados los episodios siguientes:</p>
+    <table>
+        <tr><th>Título</th><th>Duración</th><th>Idioma</th><th>Descripción</th><th>Fecha</th><th>ID Serie</th><th>Temporada</th></tr>
+        <tr><td>Piloto</td><td>55:00:00</td><td>VOSE</td><td>Walter White etc</td><td>20/01/2008</td><td>bbad</td><td>1</td></tr>
+        <tr><td>Cat's in the Bag</td><td>55:00:00</td><td>VOSE</td><td>Ahora que su etc</td><td>27/01/2008</td><td>bbad</td><td>1</td></tr>
+        <tr><td>Night Work</td><td>75:00:00</td><td>EN</td><td>The episode opens in Victorian England etc</td><td>11/05/2014</td><td>pdreadful</td><td>1</td></tr>
+        <tr><td>The National Anathem</td><td>90:00:00</td><td>EN</td><td>Primer Minister Michael Callow ...</td><td>04/12/2011</td><td>bmirror</td><td>1</td></tr>
+        </table>
+    <p>Reproduciendo estos episodios:</p>
+    <table c:execute="playEpisode(#episodi, #id, #numTemporada, #idUser)">
+        <tr><th c:set="#episodi">Episodio</th><th c:set="#id">ID</th><th c:set="#numTemporada">Nº temporada</th><th c:set="#idUser">Usuario</th></tr>
+        <tr><td>Piloto</td><td>bbad</td><td>1</td><td>c1</td></tr>
+        <tr><td>Grilled</td><td>bbad</td><td>2</td><td>c1</td></tr>
+    </table>
+    <table c:execute="#valid=hasBeenPlayed(#episodi, #id, #numTemporada, #idUser)">
+        <tr><th c:set="#episodi">Episodio</th><th c:set="#id">ID</th><th c:set="#numTemporada">Nº temporada</th><th c:set="#idUser">Usuario</th><th c:assert-equals="#valid">Resultado</th></tr>
+        <tr><td>Piloto</td><td>bbad</td><td>1</td><td>c1</td><td>Reproducido</td></tr>
+        <tr><td>Cat's in the Bag</td><td>bbad</td><td>1</td><td>c1</td><td>No Reproducido</td></tr>
+        <tr><td>Grilled</td><td>bbad</td><td>2</td><td>c1</td><td>Reproducido</td></tr>
+        <tr><td>Night Work</td><td>pdreadful</td><td>1</td><td>c1</td><td>No Reproducido</td></tr>
+        <tr><td>The National Anathem</td><td>bmirror</td><td>1</td><td>c1</td><td>No Reproducido</td></tr>
+    </table>
+</div>
+</body>
+</html>

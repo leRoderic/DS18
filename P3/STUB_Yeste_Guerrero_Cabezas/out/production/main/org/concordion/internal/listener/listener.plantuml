@@ -1,0 +1,282 @@
+@startuml
+
+title __LISTENER's Class Diagram__\n
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.listener {
+        class AssertResultRenderer {
+            + failureReported()
+            + successReported()
+            - convertToString()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.listener {
+        class BreadcrumbRenderer {
+            {static} - breadcrumbWordingCache : Map<Resource, String>
+            - specificationSource : Source
+            - xmlParser : XMLParser
+            - specificationTypes : List<SpecificationType>
+            + BreadcrumbRenderer()
+            + beforeProcessingSpecification()
+            + afterProcessingSpecification()
+            - getDocumentBody()
+            - appendBreadcrumbsTo()
+            - getIndexPageName()
+            - prependBreadcrumb()
+            - createBreadcrumbElement()
+            - getBreadcrumbWordingForResource()
+            - getBreadcrumbWording()
+            {static} - capitalize()
+            - stripExtension()
+            {static} - deCamelCase()
+            {static} - isBlank()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.listener {
+        class DocumentStructureImprover {
+            + beforeParsing()
+            - copyNodesBeforeBodyIntoHead()
+            - hasHeadSection()
+            - nodesBeforeBody()
+            - isBodySection()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.listener {
+        class FixtureExampleHook {
+            - fixture : Fixture
+            + FixtureExampleHook()
+            + beforeOuterExample()
+            + afterOuterExample()
+            + beforeExample()
+            + afterExample()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.listener {
+        class JavaScriptEmbedder {
+            - javaScript : String
+            + JavaScriptEmbedder()
+            + beforeParsing()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.listener {
+        class JavaScriptLinker {
+            - javaScriptResource : Resource
+            - script : Element
+            + JavaScriptLinker()
+            + beforeParsing()
+            + beforeProcessingSpecification()
+            + afterProcessingSpecification()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.listener {
+        class MetadataCreator {
+            + beforeParsing()
+            - addContentTypeMetadata()
+            - hasContentTypeMetadata()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.listener {
+        class PageFooterRenderer {
+            {static} # CONCORDION_WEBSITE_URL : String
+            - startMillis : long
+            + PageFooterRenderer()
+            + beforeProcessingSpecification()
+            + afterProcessingSpecification()
+            - addFooterToDocument()
+            # addDateGeneratedAt()
+            # addResultsGeneratedBy()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.listener {
+        class ResourceReferenceRemover {
+            - sourceFiles : List<ResourceToCopy>
+            + ResourceReferenceRemover()
+            + beforeParsing()
+            - removeExistingStyling()
+            - removeExistingScripts()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.listener {
+        class RunResultRenderer {
+            + RunResultRenderer()
+            + runStarted()
+            + successReported()
+            + failureReported()
+            + ignoredReported()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.listener {
+        class SpecificationExporter {
+            {static} - XML_DECLARATION : String
+            - target : Target
+            + SpecificationExporter()
+            + afterProcessingSpecification()
+            + beforeProcessingSpecification()
+            + getDescription()
+            + getDescription()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.listener {
+        class StylesheetEmbedder {
+            - stylesheetContent : String
+            - appendChild : boolean
+            + StylesheetEmbedder()
+            + StylesheetEmbedder()
+            + beforeParsing()
+            - updateConcordionNamespacePrefix()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.listener {
+        class StylesheetLinker {
+            - stylesheetResource : Resource
+            - link : Element
+            + StylesheetLinker()
+            + beforeParsing()
+            + beforeProcessingSpecification()
+            + afterProcessingSpecification()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.listener {
+        class ThrowableRenderer {
+            {static} - TOGGLING_SCRIPT_RESOURCE_PATH : String
+            - buttonId : long
+            - rootElementsWithScript : Set<Element>
+            - resourceSource : Source
+            + ThrowableRenderer()
+            + throwableCaught()
+            - ensureDocumentHasTogglingScript()
+            - expectedSpan()
+            - exceptionMessage()
+            - stackTraceTogglingButton()
+            - stackTrace()
+            - recursivelyAppendStackTrace()
+            - stackTraceElement()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.listener {
+        class VerifyRowsResultRenderer {
+            + expressionEvaluated()
+            + missingRow()
+            + surplusRow()
+        }
+      }
+    }
+  }
+  
+
+  AssertResultRenderer -up-|> AssertEqualsListener
+  AssertResultRenderer -up-|> AssertTrueListener
+  AssertResultRenderer -up-|> AssertFalseListener
+  BreadcrumbRenderer -up-|> SpecificationProcessingListener
+  DocumentStructureImprover -up-|> DocumentParsingListener
+  FixtureExampleHook -up-|> OuterExampleListener
+  FixtureExampleHook -up-|> ExampleListener
+  JavaScriptEmbedder -up-|> DocumentParsingListener
+  JavaScriptLinker -up-|> DocumentParsingListener
+  JavaScriptLinker -up-|> SpecificationProcessingListener
+  MetadataCreator -up-|> DocumentParsingListener
+  PageFooterRenderer -up-|> SpecificationProcessingListener
+  ResourceReferenceRemover -up-|> DocumentParsingListener
+  RunResultRenderer -up-|> RunListener
+  SpecificationExporter -up-|> SpecificationProcessingListener
+  SpecificationExporter -up-|> SpecificationDescriber
+  StylesheetEmbedder -up-|> DocumentParsingListener
+  StylesheetLinker -up-|> DocumentParsingListener
+  StylesheetLinker -up-|> SpecificationProcessingListener
+  ThrowableRenderer -up-|> ThrowableCaughtListener
+  VerifyRowsResultRenderer -up-|> VerifyRowsListener
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

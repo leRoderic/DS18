@@ -1,0 +1,75 @@
+<html xmlns:c="http://www.concordion.org/2007/concordion">
+<head>
+    <title>US1 - Registro Usuario</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>US1 - Registro Usuario</h1>
+
+<p>
+    <b>COMO</b> <span style="color:Blue;"> [Usuario no registrado]</span>
+    <b>QUIERO</b> <span style="color:Blue;">[Registrarme en el sistema]</span>
+    <b>PARA</b> <span style="color:Blue;"> [Acceder al contenido reservado para usuarios]</span>
+</p>
+
+<div c:example="RegisterNewUser">
+    <h3>T1.1 -  Dar alta usuario no registrado</h3>
+    <p>El usuario da unos datos al sistema y este los registra. Para comprobar su funcionamiento, registraremos a un usuario
+        en el sistema.</p>
+    <p>Dados el usuario siguientes:</p>
+    <table c:execute="registerUser(#id, #name, #dni, #adress, #nick, #password)">
+        <tr><th c:set="#id">ID</th><th c:set="#name">Nombre</th><th c:set="#dni">DNI</th><th c:set="#adress">Dirección</th><th c:set="#nick">Usuario</th><th c:set="#password">Contraseña</th></tr>
+        <tr><td>c65</td><td>Armando Lamesa</td><td>41874522B</td><td>Calle verdad 312</td><td>alamesa</td><td>alamesa</td></tr>
+    </table>
+    <table c:execute="#valid=isRegistered(#usuari)">
+        <tr><th c:set="#usuari">Usuario</th><th c:assert-equals="#valid">Resultado</th></tr>
+        <tr><td>alamesa</td><td>Registrado</td></tr>
+        <tr><td>alacarga</td><td>No registrado</td></tr>
+    </table>
+</div>
+
+<div c:example="RegisterMeAgain">
+    <h3>T1.2 - Alta usuario registrado</h3>
+    <p>Una vez registrado, un usuario no puede volver a registrarse con los mismos datos. Para comprobarlo intentamos
+    volver a registrar a unos usuarios que ya están dados de alta en el sistema.</p>
+    <p>Dados los usuarios siguientes:</p>
+    <table>
+        <tr><th>ID</th><th>Nombre</th><th>DNI</th><th>Dirección</th><th>Usuario</th><th>Contraseña</th></tr>
+        <tr><td>c1</td><td>Armando Jaleo</td><td>41874521B</td><td>Calle false 312</td><td>ajaleo</td><td>ajaleo</td></tr>
+        <tr><td>c2</td><td>Lola Mento</td><td>41823521B</td><td>Calle más false 312</td><td>lmento</td><td>lmento</td></tr>
+        <tr><td>c6</td><td>Aitor Menta</td><td>41874231B</td><td>Calle empirica 4</td><td>atormenta</td><td>atormenta</td></tr>
+
+    </table>
+    <table c:execute="#valid=isAlreadyRegistered(#usuari)">
+        <tr><th c:set="#usuari">Usuario</th><th c:assert-equals="#valid">Resultado</th></tr>
+        <tr><td>ajaleo</td><td>Registro no disponible</td></tr>
+        <tr><td>lmento</td><td>Registro no disponible</td></tr>
+        <tr><td>atormenta</td><td>Registro no disponible</td></tr>
+        <tr><td>mcolones</td><td>Registro disponible</td></tr>
+        <tr><td>singapur</td><td>Registro disponible</td></tr>
+    </table>
+</div>
+
+<div c:example="UsernameCheck">
+    <h3>T1.3 - Nombre de usuario existente</h3>
+    <p>El sistema no admite usuarios duplicados. Para comprovarlo, intentamos registrar un nuevo usuario con el nick
+    de un usuario ya registrado.</p>
+    <p>Dados los usuarios siguientes:</p>
+    <table>
+        <tr><th>ID</th><th>Nombre</th><th>DNI</th><th>Dirección</th><th>Usuario</th><th>Contraseña</th></tr>
+        <tr><td>c1</td><td>Armando Jaleo</td><td>41874521B</td><td>Calle false 312</td><td>ajaleo</td><td>ajaleo</td></tr>
+        <tr><td>c2</td><td>Lola Mento</td><td>41823521B</td><td>Calle más false 312</td><td>lmento</td><td>lmento</td></tr>
+        <tr><td>c6</td><td>Aitor Menta</td><td>41874231B</td><td>Calle empirica 4</td><td>atormenta</td><td>atormenta</td></tr>
+
+    </table>
+    <table c:execute="#valid=isValidNick(#usuari)">
+        <tr><th c:set="#usuari">Usuario</th><th c:assert-equals="#valid">Resultado</th></tr>
+        <tr><td>ajaleo</td><td>Usuario no disponible</td></tr>
+        <tr><td>lmento</td><td>Usuario no disponible</td></tr>
+        <tr><td>atormenta</td><td>Usuario no disponible</td></tr>
+        <tr><td>mcolones</td><td>Usuario disponible</td></tr>
+        <tr><td>singapur</td><td>Usuario disponible</td></tr>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+@startuml
+
+title Modelo De Dominio
+
+skinparam backgroundcolor #F8C471
+
+object Usuario
+object STUB
+object UsuarioRegistrado {
+    Nick
+    Nombre
+    Clave
+    País
+    FechaNacimiento
+}
+object Catálogo
+object Serie {
+    Título
+    Descripción
+    Imagen
+    Año
+}
+object Temática
+object Temporada {
+    Número
+}
+object Episodio {
+    Duración
+    IdiomaOriginal
+    Descripción
+    Enlace
+    Fecha
+    Hora
+}
+object EstadoEpisodio
+object Visto
+object NoVisto
+object EstadoSerie
+object WatchNext
+object WatchedList
+object NotStartedYet
+object Staff {
+    Nombre
+}
+object Actor {
+    País
+}
+object Director {
+    País
+}
+object Productora {
+    Identificador
+    Año
+}
+object Valoración
+object Puntuación
+object Dispositivo
+object Personaje
+Usuario "1" - "1" STUB: se registra
+UsuarioRegistrado "*" - "1" STUB: accede
+UsuarioRegistrado "1" - "*" Valoración: hace
+STUB "1" -- "1" Catálogo: tiene
+Catálogo "1" *-- "*" Serie: estáFormadoPor
+Temática "1..*" - "*" Serie: clasifica
+Serie "*" - "1" Staff: estáProducidaPor
+Serie "1" *-- "1..*" Temporada: tiene /'Composición'/
+Serie "*" -- "1" EstadoSerie: está
+EstadoSerie <|-- WatchNext
+EstadoSerie <|-- WatchedList
+EstadoSerie <|-- NotStartedYet
+Temporada "1" *-- "1..*" Episodio: tiene
+Staff <|-- Actor
+Staff <|-- Productora
+Staff <|-- Director
+Episodio "*" - "1" EstadoEpisodio: está
+EstadoEpisodio <|-- Visto
+EstadoEpisodio <|-- NoVisto
+Valoración "1" - "1" EstadoEpisodio: especifica
+Valoración <|-- Personaje /'Herencia'/
+Valoración <|-- Dispositivo
+Valoración <|-- Puntuación
+Personaje "1..*" - "1" Actor: esInterpretadoPor
+Serie "1" o- "1..*" Personaje: Tiene
+UsuarioRegistrado "1" - "1" Visto: ve
+UsuarioRegistrado "1" - "1" NoVisto: seSubscribeA
+/'o-- Agregación'/
+
+
+
+@enduml

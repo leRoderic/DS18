@@ -1,0 +1,12 @@
+app.controller
+app.model
+app.spec.t1_altaNuevoCliente
+app.spec.t2_loginNuevoCliente
+app.spec.t3_visualizarCatalogoSeries
+app.spec.t4_suscribirseAEpisodio
+app.spec.t5_visualizarEpisodio
+app.spec.t6_valorarEpisodio
+app.spec.t7_verWatchedList
+app.spec.t8_verWatchNext
+app.spec.t9_verNotStartedYet
+app.view

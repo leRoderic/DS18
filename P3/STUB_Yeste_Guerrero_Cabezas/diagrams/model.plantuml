@@ -1,0 +1,348 @@
+@startuml
+
+title __MODEL's Class Diagram__\n
+
+  package app.model {
+    class Actor {
+        - country : String
+        - name : String
+        + Actor()
+        + getCountry()
+        + setCountry()
+        + getName()
+        + setName()
+        + addActor()
+        + removeActor()
+        + getActor()
+    }
+  }
+  
+
+  package app.model {
+    class Catalog {
+        - series : ArrayList<Series>
+        + Catalog()
+        + getSeries()
+        + getEpisode()
+        + setSeries()
+        + addSerie()
+        + episodeExists()
+        + getSeries()
+        + title2Series()
+    }
+  }
+  
+
+  package app.model {
+    class Director {
+        - country : String
+        - name : String
+        - actors : ArrayList<Actor>
+        + Director()
+        + getCountry()
+        + setCountry()
+        + getName()
+        + setName()
+        + addActor()
+        + removeActor()
+        + getActor()
+    }
+  }
+  
+
+  package app.model {
+    class Episode {
+        - title : String
+        - duration : String
+        - oLanguage : String
+        - description : String
+        - link : String
+        - screenedDate : String
+        - idSerie : String
+        - numTemporada : String
+        - ratings : ArrayList<Rating>
+        + Episode()
+        + addRating()
+        + findRating()
+        + getSeasonNumber()
+        + getTitle()
+        + getRatings()
+        + getDuration()
+        + getoLanguage()
+        + getDescription()
+        + getLink()
+        + getScreenedDate()
+        + getIdSerie()
+    }
+  }
+  
+
+  package app.model {
+    class FacadeUser {
+        + FacadeUser()
+        + addObserver()
+        + removeObserver()
+        + notifyObservers()
+        + addToSubscribedList()
+        + getWatchedEpisodes()
+        + isWatched()
+        + addToWatchedList()
+        + removeFromWatchNext()
+        + getId()
+        + getNick()
+        + getName()
+        + getPassword()
+        + getCountry()
+        + getBirth()
+        + getSubscribedList()
+        + setName()
+        + setPassword()
+        + addWatchedList()
+        + addToNonStartedYet()
+        + addToWatchNext()
+        + getWatchedSeriesList()
+        + getNonStartedYetSeriesList()
+        + getWatchNextSeriesList()
+        + getComingEpisodes()
+        + addComingEpisode()
+        + isSeriesFinished()
+    }
+  }
+  
+
+  package app.model {
+    interface Observable {
+        {abstract} + addObserver()
+        {abstract} + removeObserver()
+        {abstract} + notifyObservers()
+    }
+  }
+  
+
+  package app.model {
+    interface Observer {
+        {abstract} + update()
+    }
+  }
+  
+
+  package app.model {
+    class Producer {
+        - id : String
+        - year : int
+        - name : String
+        + Producer()
+        + getID()
+        + setID()
+        + getYear()
+        + setYear()
+        + getName()
+        + setName()
+        + addActor()
+        + removeActor()
+        + getActor()
+    }
+  }
+  
+
+  package app.model {
+    class Rating {
+        - device : String
+        + Rating()
+        + getEmotion()
+        + setEmotion()
+        + getDevice()
+        + setDevice()
+        + getfCharacter()
+        + setfCharacter()
+        + getUser()
+    }
+  }
+  
+
+  package app.model {
+    enum Emotion {
+      GOOD
+      FUNNY
+      WOW
+      SAD
+      MEH
+      BAD
+      ERROR
+      emot
+    }
+  }
+  
+
+  package app.model {
+    class SCharacter {
+        + SCharacter()
+        + getActor()
+        + setActor()
+    }
+  }
+  
+
+  package app.model {
+    class Series {
+        - title : String
+        - id : String
+        - description : String
+        - year : int
+        - imagePath : String
+        - seasons : ArrayList<SeriesSeason>
+        - people : ArrayList<Staff>
+        + Series()
+        + addStaff()
+        + addSeason()
+        + getNumberOfSeasons()
+        + getSeason()
+        + getProducer()
+        + getDirector()
+        + getTitle()
+        + getID()
+        + getDescription()
+        + getYear()
+        + getPicturePath()
+        + getSeason()
+        + setSeason()
+        + setProducer()
+        + setDirector()
+    }
+  }
+  
+
+  package app.model {
+    class SeriesSeason {
+        - seasonNumber : int
+        - nEpisodes : int
+        - seasonEpisodes : ArrayList<Episode>
+        + SeriesSeason()
+        + getEpisode()
+        + addEpisode()
+        + getSeasonNumber()
+        + getnEpisodes()
+        + getSeasonEpisodes()
+        + setSeasonEpisodes()
+    }
+  }
+  
+
+  package app.model {
+    interface Staff {
+        {abstract} + getName()
+        {abstract} + setName()
+        {abstract} + addActor()
+        {abstract} + removeActor()
+        {abstract} + getActor()
+    }
+  }
+  
+
+  package app.model {
+    class StaffFactory {
+        + StaffFactory()
+    }
+  }
+  
+
+  package app.model {
+    interface Strategy {
+        {abstract} + update()
+    }
+  }
+  
+
+  package app.model {
+    class UpdateCatalogStrategy {
+        + update()
+    }
+  }
+  
+
+  package app.model {
+    class UpdateEpisodeStrategy {
+        + update()
+    }
+  }
+  
+
+  package app.model {
+    class UpdateSeasonStrategy {
+        + update()
+    }
+  }
+  
+
+  package app.model {
+    class User {
+        - nick : String
+        - name : String
+        - password : String
+        - country : String
+        - birth : String
+        - id : String
+        - subscribedList : ArrayList<Episode>
+        - watchedEpisodes : ArrayList<Episode>
+        - comingEpisodes : ArrayList<Episode>
+        - watchedSeriesList : ArrayList<Series>
+        - nonStartedYetSeriesList : ArrayList<Series>
+        - watchNextSeriesList : ArrayList<Series>
+        - observers : ArrayList<Observer>
+        + User()
+        + addObserver()
+        + removeObserver()
+        + notifyObservers()
+        + addToSubscribedList()
+        + getWatchedEpisodes()
+        + isWatched()
+        + addToWatchedList()
+        + removeFromWatchNext()
+        + getId()
+        + getNick()
+        + getName()
+        + getPassword()
+        + getCountry()
+        + getBirth()
+        + getSubscribedList()
+        + setName()
+        + setPassword()
+        + addWatchedList()
+        + addToNonStartedYet()
+        + addToWatchNext()
+        + getWatchedSeriesList()
+        + getNonStartedYetSeriesList()
+        + getWatchNextSeriesList()
+        + getComingEpisodes()
+        + addComingEpisode()
+        + isSeriesFinished()
+    }
+  }
+  
+
+  Actor -up-|> Staff
+  Director -up-|> Staff
+  FacadeUser o-- User : user
+  Producer -up-|> Staff
+  Rating o-- Emotion : emotion
+  Rating o-- SCharacter : fCharacter
+  Rating o-- User : user
+  Rating +-down- Emotion
+  SCharacter o-- Actor : actor
+  Series o-- Producer : producer
+  Series o-- Director : director
+  SeriesSeason o-- Series : series
+  UpdateCatalogStrategy -up-|> Strategy
+  UpdateEpisodeStrategy -up-|> Strategy
+  UpdateSeasonStrategy -up-|> Strategy
+  User -up-|> Observable
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

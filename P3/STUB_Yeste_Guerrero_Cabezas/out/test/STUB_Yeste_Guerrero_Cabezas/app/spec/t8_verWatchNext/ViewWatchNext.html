@@ -1,0 +1,65 @@
+<html xmlns:c="http://www.concordion.org/2007/concordion">
+<head>
+    <title>US8 - Visualización de la lista Watch Next</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>US8 - Visualización de la lista Watch Next</h1>
+<p>
+    <b>COMO</b> <span style="color:Blue;">[Usuario registrado y logeado]</span>
+    <b>QUIERO</b> <span style="color:Blue;">[Ver la lista Watch Next]</span>
+    <b>PARA</b> <span style="color:Blue;">[Saber que series tengo incompletas]</span>
+</p>
+<div c:example="viewWatchNextList">
+    <h3>T8.1 - Lista sin series </h3>
+    <p>La lista Watch Next muestra las series vistas incompletas, por tanto, cuando un usuario tenga su lista Watch Next vacía,
+        mostraremos el mensaje como que no hay ninguna.</p>
+    <p>Dados usuarios siguientes:</p>
+    <table >
+        <tr><th>Usuario</th><th>Id</th></tr>
+        <tr><td>Armando Jaleo</td><td>c1</td></tr>
+        <tr><td>Lola Mento</td><td>c2</td></tr>
+        <tr><td>Leandro Gao</td><td>c3</td></tr>
+    </table>
+
+    <p>Añadiendo estas series vistas a los usuarios:</p>
+    <table c:execute="addNext(#id,#serie)">
+        <tr><th c:set="#id">Usuario</th><th c:set="#serie">IdSerie</th></tr>
+        <tr><td>c1</td><td>bbad</td></tr>
+        <tr><td>c1</td><td>sthings</td></tr>
+        <tr><td>c2</td><td>bbad</td></tr>
+    </table>
+    <p>Sabremos si el Usuario tiene una WatchedList existente o no:</p>
+    <table c:execute="#valid = checkHasEmptyWatchNextList(#id)">
+        <tr><th c:set="#id">Usuario</th><th c:assertEquals="#valid">Resultado</th></tr>
+        <tr><td>c1</td><td>No tiene ninguna serie a medias</td></tr>
+        <tr><td>c2</td><td>No tiene ninguna serie a medias</td></tr>
+        <tr><td>c3</td><td>Tiene series incompletas</td></tr>
+    </table>
+</div>
+<div c:example="NothingViewed">
+    <h3>T8.2 - Ninguna serie empezada </h3>
+    <p>La lista Watch Next muestra las series vistas incompletas, por tanto, mientras un usuario no haya visto ningún episodio,
+        su lista Watch Next no estará disponible, ya que no habrá continuación.
+    </p>
+    <p>Dados los usuarios siguientes:</p>
+    <table >
+        <tr><th>Usuario</th><th>Id</th></tr>
+        <tr><td>Armando Jaleo</td><td>c1</td></tr>
+        <tr><td>Lola Mento</td><td>c2</td></tr>
+        <tr><td>Leandro Gao</td><td>c3</td></tr>
+    </table>
+    <p>Reproduciendo estos episodios:</p>
+    <table c:execute="playEpisode(#episodi, #id, #numTemporada, #idUser)">
+        <tr><th c:set="#episodi">Episodio</th><th c:set="#id">ID</th><th c:set="#numTemporada">Nº temporada</th><th c:set="#idUser">Usuario</th></tr>
+        <tr><td>Grilled</td><td>bbad</td><td>2</td><td>c2</td></tr>
+    </table>
+    <table c:execute="#valid = chkWatchNextAvailable(#id)">
+        <tr><th c:set="#id">Usuario</th><th c:assertEquals="#valid">Resultado</th></tr>
+        <tr><td>c1</td><td>Watch Next no disponible</td></tr>
+        <tr><td>c2</td><td>Watch Next disponible</td></tr>
+        <tr><td>c3</td><td>Watch Next no disponible</td></tr>
+    </table>
+</div>
+</body>
+</html>

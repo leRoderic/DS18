@@ -1,0 +1,270 @@
+JFDML JFormDesigner: "6.0.5.0.178" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:19:p, par l {seq {comp lblTitle:::p::p, space :::x}, seq {par l {comp lblPassWord:::p::p, seq {par l {comp lblNick::l:p::p, comp jScrollPane1:::p:218:p, comp lblName:::p::p, comp jScrollPane2:::p:218:p, comp txtPassWord::l:p:218:p}, par l {seq {space :p:27:p, par l {seq {comp lblBDay:::p::p, space :::p, comp selDay:::p:72:p, space :::p, comp lblBMonth:::p::p, space :::p, comp selMonth:::p:72:p, space s:::p, comp lblBYear:::p:41:p, space :::p, comp selYear:::p:84:p}, comp lblBirth:::p::p, comp lblCountry:::p::p, comp jScrollPane6:::p:377:p}}, seq t {space :p:18:p, comp btAccept:::p:177:p, space s:::p, comp btCancel:::p:191:p}}}}, space :0:55:x}}}}"
+			"$verticalGroup": "par l {seq l {space :p:18:p, comp lblTitle:::p::p, space s:::p, par b {comp lblNick::b:p::p, comp lblBirth::b:p::p}, space :::p, par b {comp jScrollPane1::l:p::p, comp lblBDay::b:p::p, comp selDay::b:p::p, comp lblBMonth::b:p::p, comp selMonth::b:p::p, comp lblBYear::b:p::p, comp selYear::b:p::p}, space :p:11:p, par b {comp lblName::b:p::p, comp lblCountry::b:p::p}, space :::p, par l {comp jScrollPane2:::p::p, comp jScrollPane6:::p::p}, space u:::p, comp lblPassWord:::p::p, space :::p, par b {comp txtPassWord::b:p::p, comp btAccept::b:p:39:p, comp btCancel::b:p:39:p}, space ::61:x}}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"title": "StUB - Alta"
+			addEvent( new FormEvent( "java.awt.event.KeyListener", "keyPressed", "thisKeyPressed", true ) )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblTitle"
+				"font": new java.awt.Font( "Dialog", 1, 18 )
+				"text": "Registro usuario nuevo"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "jScrollPane1"
+				add( new FormComponent( "javax.swing.JTextPane" ) {
+					name: "txtNick"
+					"font": new java.awt.Font( "Dialog", 0, 16 )
+					"toolTipText": "Nombre de usuario"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblNick"
+				"font": new java.awt.Font( "Dialog", 1, 16 )
+				"text": "Nick:"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblName"
+				"font": new java.awt.Font( "Dialog", 1, 16 )
+				"text": "Nombre:"
+				"toolTipText": "Nombre completo."
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "jScrollPane2"
+				add( new FormComponent( "javax.swing.JTextPane" ) {
+					name: "txtName"
+					"font": new java.awt.Font( "Dialog", 0, 16 )
+					"toolTipText": "Nombre completo"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblPassWord"
+				"font": new java.awt.Font( "Dialog", 1, 16 )
+				"text": "Contraseña:"
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "txtPassWord"
+				"font": new java.awt.Font( "Dialog", 0, 16 )
+				"toolTipText": "No compartas tu contraseña con nadie"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblBirth"
+				"font": new java.awt.Font( "Dialog", 1, 16 )
+				"text": "Fecha nacimiento:"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblBDay"
+				"font": new java.awt.Font( "Dialog", 0, 16 )
+				"text": "Día:"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblBMonth"
+				"font": new java.awt.Font( "Dialog", 0, 16 )
+				"text": "Mes:"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblBYear"
+				"font": new java.awt.Font( "Dialog", 0, 16 )
+				"text": "Año:"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblCountry"
+				"font": new java.awt.Font( "Dialog", 1, 16 )
+				"text": "País:"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "jScrollPane6"
+				add( new FormComponent( "javax.swing.JTextPane" ) {
+					name: "txtCountry"
+					"font": new java.awt.Font( "Dialog", 0, 16 )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btAccept"
+				"font": new java.awt.Font( "Dialog", 1, 16 )
+				"text": "Aceptar"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btAcceptActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btAcceptActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btCancel"
+				"font": new java.awt.Font( "Dialog", 1, 16 )
+				"text": "Cancelar"
+				"border": new javax.swing.border.MatteBorder( 1, 1, 1, 1, new java.awt.Color( 255, 0, 0, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btCancelActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "selYear"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "1920"
+					addElement( "1920" )
+					addElement( "1921" )
+					addElement( "1922" )
+					addElement( "1923" )
+					addElement( "1924" )
+					addElement( "1925" )
+					addElement( "1926" )
+					addElement( "1927" )
+					addElement( "1928" )
+					addElement( "1929" )
+					addElement( "1930" )
+					addElement( "1931" )
+					addElement( "1932" )
+					addElement( "1933" )
+					addElement( "1934" )
+					addElement( "1935" )
+					addElement( "1936" )
+					addElement( "1937" )
+					addElement( "1938" )
+					addElement( "1939" )
+					addElement( "1940" )
+					addElement( "1941" )
+					addElement( "1942" )
+					addElement( "1943" )
+					addElement( "1944" )
+					addElement( "1945" )
+					addElement( "1946" )
+					addElement( "1947" )
+					addElement( "1948" )
+					addElement( "1949" )
+					addElement( "1950" )
+					addElement( "1951" )
+					addElement( "1952" )
+					addElement( "1953" )
+					addElement( "1954" )
+					addElement( "1955" )
+					addElement( "1956" )
+					addElement( "1957" )
+					addElement( "1958" )
+					addElement( "1959" )
+					addElement( "1960" )
+					addElement( "1961" )
+					addElement( "1962" )
+					addElement( "1963" )
+					addElement( "1964" )
+					addElement( "1965" )
+					addElement( "1966" )
+					addElement( "1967" )
+					addElement( "1968" )
+					addElement( "1969" )
+					addElement( "1970" )
+					addElement( "1971" )
+					addElement( "1972" )
+					addElement( "1973" )
+					addElement( "1974" )
+					addElement( "1975" )
+					addElement( "1976" )
+					addElement( "1977" )
+					addElement( "1978" )
+					addElement( "1979" )
+					addElement( "1980" )
+					addElement( "1981" )
+					addElement( "1982" )
+					addElement( "1983" )
+					addElement( "1984" )
+					addElement( "1985" )
+					addElement( "1986" )
+					addElement( "1987" )
+					addElement( "1988" )
+					addElement( "1989" )
+					addElement( "1990" )
+					addElement( "1991" )
+					addElement( "1992" )
+					addElement( "1993" )
+					addElement( "1994" )
+					addElement( "1995" )
+					addElement( "1996" )
+					addElement( "1997" )
+					addElement( "1998" )
+					addElement( "1999" )
+					addElement( "2000" )
+					addElement( "2001" )
+					addElement( "2002" )
+					addElement( "2003" )
+					addElement( "2004" )
+					addElement( "2005" )
+					addElement( "2006" )
+					addElement( "2007" )
+					addElement( "2008" )
+					addElement( "2009" )
+					addElement( "2010" )
+					addElement( "2011" )
+					addElement( "2012" )
+					addElement( "2013" )
+					addElement( "2014" )
+					addElement( "2015" )
+					addElement( "2016" )
+					addElement( "2017" )
+					addElement( "2018" )
+				}
+				"font": new com.jformdesigner.model.SwingDerivedFont( "Dialog", 0, 16, true )
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "selDay"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "1"
+					addElement( "1" )
+					addElement( "2" )
+					addElement( "3" )
+					addElement( "4" )
+					addElement( "5" )
+					addElement( "6" )
+					addElement( "7" )
+					addElement( "8" )
+					addElement( "9" )
+					addElement( "10" )
+					addElement( "11" )
+					addElement( "12" )
+					addElement( "13" )
+					addElement( "14" )
+					addElement( "15" )
+					addElement( "16" )
+					addElement( "17" )
+					addElement( "18" )
+					addElement( "19" )
+					addElement( "20" )
+					addElement( "21" )
+					addElement( "22" )
+					addElement( "23" )
+					addElement( "24" )
+					addElement( "25" )
+					addElement( "26" )
+					addElement( "27" )
+					addElement( "28" )
+					addElement( "29" )
+					addElement( "30" )
+					addElement( "31" )
+				}
+				"font": new com.jformdesigner.model.SwingDerivedFont( "Dialog", 0, 16, true )
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "selMonth"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "1"
+					addElement( "1" )
+					addElement( "2" )
+					addElement( "3" )
+					addElement( "4" )
+					addElement( "5" )
+					addElement( "6" )
+					addElement( "7" )
+					addElement( "8" )
+					addElement( "9" )
+					addElement( "10" )
+					addElement( "11" )
+					addElement( "12" )
+				}
+				"font": new com.jformdesigner.model.SwingDerivedFont( "Dialog", 0, 16, true )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 560, 300 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

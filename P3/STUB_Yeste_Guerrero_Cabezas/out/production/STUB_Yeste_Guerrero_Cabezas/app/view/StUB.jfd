@@ -1,0 +1,153 @@
+JFDML JFormDesigner: "6.0.5.0.178" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:29:p, par l {comp lblSeries:::p::p, comp scrollPaneSeries:::p:250:p}, space :p:32:p, par l {comp scrollPaneSeasons:::p:250:p, comp lblSeasons:::p::p}, space :p:29:p, par l {comp scrollPaneEpisodes:::p:250:p, comp lblEpisodes:::p::p}, space :p:33:p}}"
+			"$verticalGroup": "par l {seq l {space :p:17:p, par b {comp lblSeries::b:p::p, comp lblEpisodes::b:p::p, comp lblSeasons::b:p::p}, space :::p, par l {comp scrollPaneSeries::l:p:444:p, comp scrollPaneSeasons::l:p:444:p, comp scrollPaneEpisodes:::p:444:p}, space ::24:x}}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"title": "StUB - Página principal"
+			"background": new java.awt.Color( 255, 51, 51, 255 )
+			"resizable": false
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPaneSeries"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "allList"
+					"background": new java.awt.Color( 51, 153, 255, 255 )
+					"font": new com.jformdesigner.model.SwingDerivedFont( "Dialog", 1, 16, true )
+					"selectionMode": 0
+					"model": new javax.swing.DefaultListModel {
+						addElement( "Error carga catálogo" )
+					}
+					auxiliary() {
+						"JavaCodeGenerator.postInitCode": "updateCatalogList(null);"
+					}
+					addEvent( new FormEvent( "javax.swing.event.ListSelectionListener", "valueChanged", "allListValueChanged", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPaneSeasons"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "allSeasons"
+					"background": new java.awt.Color( 51, 153, 255, 255 )
+					"model": new javax.swing.DefaultListModel {
+						addElement( "Selecciona una serie" )
+					}
+					"font": new com.jformdesigner.model.SwingDerivedFont( "Dialog", 0, 16, true )
+					addEvent( new FormEvent( "javax.swing.event.ListSelectionListener", "valueChanged", "allSeasonsValueChanged", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPaneEpisodes"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "allEpisodes"
+					"background": new java.awt.Color( 51, 153, 255, 255 )
+					"font": new com.jformdesigner.model.SwingDerivedFont( "Dialog", 1, 16, true )
+					"model": new javax.swing.DefaultListModel {
+						addElement( "Selecciona un episodio" )
+					}
+					addEvent( new FormEvent( "javax.swing.event.ListSelectionListener", "valueChanged", "allEpisodesValueChanged", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblSeries"
+				"text": "Series disponibles:"
+				"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( "Dialog", 1, 16, true )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblSeasons"
+				"text": "Temporadas disponibles:"
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblEpisodes"
+				"text": "Episodios diponibles:"
+				"font": #SwingDerivedFont0
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar"
+				"font": new java.awt.Font( "Dialog", 1, 16 )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "mAllCatalog"
+					"border": new javax.swing.border.SoftBevelBorder( 0, new java.awt.Color( 51, 102, 255, 255 ), new java.awt.Color( 51, 102, 255, 255 ), null, null )
+					"text": "Catalogo"
+					"font": new java.awt.Font( "Dialog", 1, 16 )
+					"background": sfield java.awt.Color cyan
+					"toolTipText": "Muestra el catálogo."
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "mAllCatalogActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "mWatchNext"
+					"border": new javax.swing.border.SoftBevelBorder( 0, new java.awt.Color( 51, 102, 255, 255 ), new java.awt.Color( 51, 102, 255, 255 ), null, null )
+					"text": "Watch Next"
+					"font": new java.awt.Font( "Dialog", 1, 16 )
+					"background": sfield java.awt.Color white
+					"toolTipText": "Muestra la lista WatchNext."
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "mWatchNextActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "mWatched"
+					"border": new javax.swing.border.SoftBevelBorder( 0, new java.awt.Color( 51, 102, 255, 255 ), new java.awt.Color( 51, 102, 255, 255 ), null, null )
+					"text": "Watched"
+					"font": new java.awt.Font( "Dialog", 1, 16 )
+					"background": sfield java.awt.Color white
+					"toolTipText": "Muestra la lista Watched."
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "mWatchedActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "mNotStarted"
+					"border": new javax.swing.border.SoftBevelBorder( 0, new java.awt.Color( 51, 102, 255, 255 ), new java.awt.Color( 51, 102, 255, 255 ), null, null )
+					"text": "Not Started"
+					"font": new java.awt.Font( "Dialog", 1, 16 )
+					"background": sfield java.awt.Color white
+					"toolTipText": "Muestra la lista NotStartedYet."
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "mNotStartedActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txtSearch"
+					"font": new com.jformdesigner.model.SwingDerivedFont( "Dialog", 1, 16, true )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btSearch"
+					"text": "Buscar"
+					"font": new com.jformdesigner.model.SwingDerivedFont( "Dialog", 1, 16, true )
+					"background": sfield java.awt.Color white
+					"border": new javax.swing.border.SoftBevelBorder( 1, new java.awt.Color( 51, 102, 255, 255 ), new java.awt.Color( 51, 102, 255, 255 ), null, null )
+					"toolTipText": "Busca por el nombre de la serie."
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btSearchActionPerformed", true ) )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "mAccOpt"
+					"text": "Cuenta"
+					"font": new java.awt.Font( "Dialog", 1, 16 )
+					"horizontalAlignment": 4
+					"horizontalTextPosition": 4
+					"border": new javax.swing.border.SoftBevelBorder( 0, new java.awt.Color( 51, 102, 255, 255 ), new java.awt.Color( 51, 102, 255, 255 ), null, null )
+					"background": sfield java.awt.Color white
+					"toolTipText": "Opciones de usuario."
+					auxiliary() {
+						"JavaCodeGenerator.postCreateCode": "this.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);"
+					}
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "mLogOut"
+						"text": "Cerrar sesión"
+						"font": new com.jformdesigner.model.SwingDerivedFont( "Dialog", 1, 16, true )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "mLogOutActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "mChangeuser"
+						"text": "Cambiar de usuario"
+						"font": new com.jformdesigner.model.SwingDerivedFont( "Dialog", 1, 16, true )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "mChangeuserActionPerformed", true ) )
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 875, 575 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

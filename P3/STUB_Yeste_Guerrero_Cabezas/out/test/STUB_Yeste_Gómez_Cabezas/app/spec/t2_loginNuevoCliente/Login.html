@@ -1,0 +1,63 @@
+<html xmlns:c="http://www.concordion.org/2007/concordion">
+<head>
+    <title>US2 - LogIn usuario</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>US2 - LogIn Usuario</h1>
+
+<p>
+    <b>COMO</b> <span style="color:Blue;"> color="blue">[Usuario registrado]</span>
+    <b>QUIERO</b> <span style="color:Blue;"> [Loguearme en el sistema]</span>
+    <b>PARA</b> <span style="color:Blue;"> [Acceder a mi contenido]</span>
+</p>
+<div c:example="LogInCheck">
+    <h3>T2.1 - Contraseña incorrecta</h3>
+    <p>El sistema solo permite el acceso cuando se proporciona un usuario y contraseña válidos, entendiendo como contraseña
+    válida aquellas que se correspondan con sus respectivos usuarios. Para comprobarlo intentamos loguear algunos usuarios
+    con contraseñas erróneas.</p>
+    <p>Dados los usuarios siguientes:</p>
+    <table>
+        <tr><th>ID</th><th>Nombre</th><th>DNI</th><th>Dirección</th><th>Usuario</th><th>Contraseña</th></tr>
+        <tr><td>c1</td><td>Armando Jaleo</td><td>41874521B</td><td>Calle false 312</td><td>ajaleo</td><td>ajaleo</td></tr>
+        <tr><td>c2</td><td>Lola Mento</td><td>41823521B</td><td>Calle más false 312</td><td>lmento</td><td>lmento</td></tr>
+        <tr><td>c6</td><td>Aitor Menta</td><td>41874231B</td><td>Calle empirica 4</td><td>atormenta</td><td>atormenta</td></tr>
+        <tr><td>z9</td><td>Misco Jones</td><td>21508741G</td><td>Rue del percebe</td><td>mcojones</td><td>singapur</td></tr>
+        <tr><td>c92</td><td>Soila Cerda</td><td>00500014U</td><td>Calle rojas</td><td>toledo</td><td>rajoy</td></tr>
+    </table>
+    <p>Obtenemos que:</p>
+    <table c:execute="#valid=testLogIn(#usuari, #password)">
+        <tr><th c:set="#usuari">Usuario</th><th c:set="#password">Contraseña</th><th c:assert-equals="#valid">Resultado</th></tr>
+        <tr><td>ajaleo</td><td>ajaleo</td><td>Login correcto</td></tr>
+        <tr><td>lmento</td><td>lmento</td><td>Login correcto</td></tr>
+        <tr><td>atormenta</td><td>100tifiko</td><td>Login no válido</td></tr>
+        <tr><td>mcojones</td><td>singapur</td><td>Login correcto</td></tr>
+        <tr><td>singapur</td><td>alfiler</td><td>Login no válido</td></tr>
+    </table>
+</div>
+<div c:example="UserCheck">
+    <h3>T2.2 - Usuario inexistente</h3>
+    <p>El sistema solo permite el acceso cuando se proporciona un usuario y contraseña válidos, entendiendo como usuario
+    válido aquellos que consten en la base de datos del sistema. Para comprobarlo, intentará iniciar sesión con nombres de
+    usuario que no han sido previamente registrados en el sistema.</p>
+    <p>Dados los usuarios siguientes:</p>
+    <table>
+        <tr><th>ID</th><th>Nombre</th><th>DNI</th><th>Dirección</th><th>Usuario</th><th>Contraseña</th></tr>
+        <tr><td>c1</td><td>Armando Jaleo</td><td>41874521B</td><td>Calle false 312</td><td>ajaleo</td><td>ajaleo</td></tr>
+        <tr><td>c2</td><td>Lola Mento</td><td>41823521B</td><td>Calle más false 312</td><td>lmento</td><td>lmento</td></tr>
+        <tr><td>c6</td><td>Aitor Menta</td><td>41874231B</td><td>Calle empirica 4</td><td>atormenta</td><td>atormenta</td></tr>
+        <tr><td>z9</td><td>Misco Jones</td><td>21508741G</td><td>Rue del percebe</td><td>mcojones</td><td>singapur</td></tr>
+        <tr><td>c92</td><td>Soila Cerda</td><td>00500014U</td><td>Calle rojas</td><td>toledo</td><td>rajoy</td></tr>
+    </table>
+    <p>Obtenemos que:</p>
+    <table c:execute="#valid=userExists(#usuari)">
+        <tr><th c:set="#usuari">Usuario</th><th c:assert-equals="#valid">Resultado</th></tr>
+        <tr><td>ajaleo</td><td>Usuario existe</td></tr>
+        <tr><td>100tifiko</td><td>Usuario no existe</td></tr>
+        <tr><td>atormenta</td><td>Usuario existe</td></tr>
+        <tr><td>solandecabras</td><td>Usuario no existe</td></tr>
+        <tr><td>singapur</td><td>Usuario no existe</td></tr>
+    </table>
+</div>
+</body>
+</html>

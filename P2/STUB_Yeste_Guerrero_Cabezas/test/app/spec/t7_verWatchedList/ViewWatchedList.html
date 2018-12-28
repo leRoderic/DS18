@@ -1,0 +1,41 @@
+<html xmlns:c="http://www.concordion.org/2007/concordion">
+<head>
+    <title>US7 - Visualización de la lista Watched List</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>US7 - Visualización de la lista Watched List</h1>
+<p>
+    <b>COMO</b> <span style="color:Blue;">[Usuario registrado y logeado]</span>
+    <b>QUIERO</b> <span style="color:Blue;">[Ver la lista de series en WatchedList]</span>
+    <b>PARA</b> <span style="color:Blue;">[Saber que series he visto ya]</span>
+</p>
+<div c:example="viewWatchedList">
+    <h3>T7.1 - Lista sin series </h3>
+    <p>La lista WatchedList muestra sólo las series vistas, por tanto, cuando un usuario no haya visto ninguna serie, mostraremos el mensaje como que no hay ninguna. Para ello
+    utilizaremos el usuario c1,c2 y c3 como prueba</p>
+    <p>Con los usuarios siguientes:</p>
+    <table >
+        <tr><th>Usuario</th><th>Id</th></tr>
+        <tr><td>Armando Jaleo</td><td>c1</td></tr>
+        <tr><td>Lola Mento</td><td>c2</td></tr>
+        <tr><td>Leandro Gao</td><td>c3</td></tr>
+    </table>
+    <p>Añadiendo estas series vistas a los usuarios:</p>
+    <table c:execute="add(#id,#serie)">
+        <tr><th>Usuario</th><th c:set="#id">idUsuario</th><th> Series</th><th c:set="#serie">IdSerie</th></tr>
+        <tr><td>Armando Jaleo</td><td>c1</td><td>Breaking Bad</td><td>bbad</td></tr>
+        <tr><td>Armando Jaleo</td><td>c1</td><td>Stranger Things</td><td>sthings</td></tr>
+        <tr><td>Lola Mento</td><td>c2</td><td>Breaking Bad</td><td>bbad</td></tr>
+    </table>
+
+    <p>Sabremos si el Usuario tiene una WatchedList existente o no:</p>
+    <table c:execute="#valid = checkHasEmptyWatchedList(#id)">
+        <tr><th>Usuario</th><th c:set="#id">idUsuario</th><th c:assertEquals="#valid">Resultado</th></tr>
+        <tr><td>Armando Jaleo</td><td>c1</td><td>Watched List con series completas</td></tr>
+        <tr><td>Armando Jaleo</td><td>c2</td><td>Watched List con series completas</td></tr>
+        <tr><td>Leandro Gao</td><td>c3</td><td>Watched List Vacía</td></tr>
+    </table>
+</div>
+</body>
+</html>

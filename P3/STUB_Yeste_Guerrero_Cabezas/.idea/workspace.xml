@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="4" />
+    <option name="CUSTOM_SCOPE_NAME" value="src" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="aac20efc-bdbc-406a-a013-25ef9711fae2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/concordion_2_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/concordion_2_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/STUB_Yeste_G+¦mez_Cabezas.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/STUB_Yeste_Guerrero_Cabezas.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/STUB_Yeste_Guerrero_Cabezas1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/STUB_Yeste_Gómez_Cabezas.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagrams/Modelo de Dominio.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagrams/STUB_Yeste_Guerrero_Cabezas.plantuml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagrams/controller.plantuml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagrams/model.plantuml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagrams/resources.plantuml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagrams/t1_altaNuevoCliente.plantuml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagrams/t2_loginNuevoCliente.plantuml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagrams/t3_visualizarCatalogoSeries.plantuml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagrams/t4_suscribirseAEpisodio.plantuml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagrams/t5_visualizarEpisodio.plantuml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagrams/t7_verWatchedList.plantuml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagrams/t8_verWatchNext.plantuml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagrams/t9_verNotStartedYet.plantuml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/allclasses-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/allclasses-noframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/controller/Controller.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/controller/Controller.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/controller/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/controller/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/controller/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/controller/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/controller/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/controller/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/model/Actor.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/model/Actor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/model/Catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/model/Catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/model/Director.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/model/Director.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/model/Episode.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/model/Episode.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/model/Producer.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/model/Producer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/model/Rating.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/model/Rating.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/model/SCharacter.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/model/SCharacter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/model/Series.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/model/Series.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/model/SeriesSeason.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/model/SeriesSeason.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/model/Staff.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/model/Staff.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/model/User.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/model/User.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/model/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/model/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/model/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/model/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/model/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/model/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t1_altaNuevoCliente/RegisterTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t1_altaNuevoCliente/RegisterTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t1_altaNuevoCliente/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t1_altaNuevoCliente/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t1_altaNuevoCliente/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t1_altaNuevoCliente/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t1_altaNuevoCliente/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t1_altaNuevoCliente/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t2_loginNuevoCliente/LoginTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t2_loginNuevoCliente/LoginTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t2_loginNuevoCliente/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t2_loginNuevoCliente/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t2_loginNuevoCliente/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t2_loginNuevoCliente/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t2_loginNuevoCliente/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t2_loginNuevoCliente/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t3_visualizarCatalogoSeries/ViewCatalogTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t3_visualizarCatalogoSeries/ViewCatalogTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t3_visualizarCatalogoSeries/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t3_visualizarCatalogoSeries/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t3_visualizarCatalogoSeries/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t3_visualizarCatalogoSeries/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t3_visualizarCatalogoSeries/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t3_visualizarCatalogoSeries/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t4_suscribirseAEpisodio/SubscribeToEpisodeTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t4_suscribirseAEpisodio/SubscribeToEpisodeTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t4_suscribirseAEpisodio/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t4_suscribirseAEpisodio/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t4_suscribirseAEpisodio/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t4_suscribirseAEpisodio/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t4_suscribirseAEpisodio/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t4_suscribirseAEpisodio/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t5_visualizarEpisodio/ViewEpisodeTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t5_visualizarEpisodio/ViewEpisodeTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t5_visualizarEpisodio/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t5_visualizarEpisodio/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t5_visualizarEpisodio/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t5_visualizarEpisodio/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t5_visualizarEpisodio/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t5_visualizarEpisodio/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t6_valorarEpisodio/RateEpisodeTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t6_valorarEpisodio/RateEpisodeTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t6_valorarEpisodio/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t6_valorarEpisodio/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t6_valorarEpisodio/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t6_valorarEpisodio/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t6_valorarEpisodio/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t6_valorarEpisodio/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t7_verWatchedList/ViewWatchedListTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t7_verWatchedList/ViewWatchedListTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t7_verWatchedList/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t7_verWatchedList/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t7_verWatchedList/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t7_verWatchedList/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t7_verWatchedList/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t7_verWatchedList/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t8_verWatchNext/ViewWatchNextTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t8_verWatchNext/ViewWatchNextTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t8_verWatchNext/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t8_verWatchNext/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t8_verWatchNext/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t8_verWatchNext/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t8_verWatchNext/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t8_verWatchNext/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t9_verNotStartedYet/ViewNotStartedYetTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t9_verNotStartedYet/ViewNotStartedYetTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t9_verNotStartedYet/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t9_verNotStartedYet/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t9_verNotStartedYet/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t9_verNotStartedYet/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/app/spec/t9_verNotStartedYet/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/app/spec/t9_verNotStartedYet/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/deprecated-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-13.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-14.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-15.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/overview-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/overview-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/overview-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/package-list" beforeDir="false" afterPath="$PROJECT_DIR$/doc/package-list" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/doc/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/concordion-2.1.1/src/main/java/org/concordion/concordion.plantuml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/concordion-2.1.1/src/main/java/org/concordion/concordion.plantuml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/concordion-2.1.1/src/main/java/org/concordion/internal/command/command.plantuml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/concordion-2.1.1/src/main/java/org/concordion/internal/command/command.plantuml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/concordion-2.1.1/src/main/java/org/concordion/internal/command/executeCommand/executeCommand.plantuml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/concordion-2.1.1/src/main/java/org/concordion/internal/command/executeCommand/executeCommand.plantuml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/concordion-2.1.1/src/main/java/org/concordion/internal/command/strategies/strategies.plantuml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/concordion-2.1.1/src/main/java/org/concordion/internal/command/strategies/strategies.plantuml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/concordion-2.1.1/src/main/java/org/concordion/internal/internal.plantuml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/concordion-2.1.1/src/main/java/org/concordion/internal/internal.plantuml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/concordion-2.1.1/src/main/java/org/concordion/internal/scopedObjects/scopedObjects.plantuml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/concordion-2.1.1/src/main/java/org/concordion/internal/scopedObjects/scopedObjects.plantuml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/concordion-2.1.1/src/main/main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/concordion-2.1.1/src/main/main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/concordion-2.1.1/src/test-dummies/test-dummies.iml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/concordion-2.1.1/src/test-dummies/test-dummies.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/concordion-2.1.1/src/test/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/concordion-2.1.1/src/test/test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/controller/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/model/Actor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/model/Catalog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/model/Director.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/model/Episode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/model/Observer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/model/Producer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/model/RatingEDF$Emotion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/model/RatingEDF.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/model/SCharacter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/model/Series.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/model/SeriesSeason.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/model/Staff.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/model/StaffFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/model/Subject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/resources/DAO_STUB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/resources/DAO_XML_STUB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/resources/STUBXMLParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/view/LogInUser$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/view/LogInUser$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/view/LogInUser$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/view/LogInUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/view/RateEpisode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/view/RegisterUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/view/StUB$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/view/StUB$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/view/StUB$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/view/StUB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/view/StUBLauncher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/STUB_Yeste_Gómez_Cabezas/app/view/ViewEpisode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/STUB_Yeste_Gómez_Cabezas/app/spec/t1_altaNuevoCliente/RegisterTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/STUB_Yeste_Gómez_Cabezas/app/spec/t2_loginNuevoCliente/LoginTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/STUB_Yeste_Gómez_Cabezas/app/spec/t3_visualizarCatalogoSeries/ViewCatalogTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/STUB_Yeste_Gómez_Cabezas/app/spec/t4_suscribirseAEpisodio/SubscribeToEpisodeTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/STUB_Yeste_Gómez_Cabezas/app/spec/t5_visualizarEpisodio/ViewEpisodeTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/STUB_Yeste_Gómez_Cabezas/app/spec/t6_valorarEpisodio/RateEpisodeTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/STUB_Yeste_Gómez_Cabezas/app/spec/t7_verWatchedList/ViewWatchedListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/STUB_Yeste_Gómez_Cabezas/app/spec/t8_verWatchNext/ViewWatchNextTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/STUB_Yeste_Gómez_Cabezas/app/spec/t9_verNotStartedYet/ViewNotStartedYetTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/model/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/model/Actor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/model/Catalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/model/Catalog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/model/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/model/Director.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/model/Episode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/model/Episode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/model/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/model/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/model/RatingEDF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/model/Rating.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/model/Series.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/model/Series.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/model/StaffFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/model/StaffFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/model/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/model/Observable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/model/UpdateCatalogStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/model/UpdateCatalogStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/model/UpdateEpisodeStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/model/UpdateEpisodeStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/model/UpdateSeasonStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/model/UpdateSeasonStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/resources/DAO_XML_STUB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/resources/DAO_XML_STUB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/view/LogInUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/view/LogInUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/view/RateEpisode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/view/RateEpisode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/view/RegisterUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/view/RegisterUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/view/StUB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/view/StUB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/view/ViewEpisode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/view/ViewEpisode.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/view/StUBLauncher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+              <folding>
+                <element signature="e#91#92#0" expanded="true" />
+                <element signature="e#138#139#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>update</find>
+      <find>new</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/app/model/Strategy.java" />
+        <option value="$PROJECT_DIR$/src/app/model/Facade.java" />
+        <option value="$PROJECT_DIR$/src/app/controller/Controller.java" />
+        <option value="$PROJECT_DIR$/src/app/model/Actor.java" />
+        <option value="$PROJECT_DIR$/src/app/model/Catalog.java" />
+        <option value="$PROJECT_DIR$/src/app/model/Director.java" />
+        <option value="$PROJECT_DIR$/src/app/model/Episode.java" />
+        <option value="$PROJECT_DIR$/src/app/model/FacadeUser.java" />
+        <option value="$PROJECT_DIR$/src/app/model/Observable.java" />
+        <option value="$PROJECT_DIR$/src/app/model/Producer.java" />
+        <option value="$PROJECT_DIR$/src/app/model/Series.java" />
+        <option value="$PROJECT_DIR$/src/app/model/StaffFactory.java" />
+        <option value="$PROJECT_DIR$/src/app/model/UpdateCatalogStrategy.java" />
+        <option value="$PROJECT_DIR$/src/app/model/UpdateEpisodeStrategy.java" />
+        <option value="$PROJECT_DIR$/src/app/model/UpdateSeasonStrategy.java" />
+        <option value="$PROJECT_DIR$/src/app/model/User.java" />
+        <option value="$PROJECT_DIR$/src/app/view/RegisterUser.java" />
+        <option value="$PROJECT_DIR$/src/app/view/LogInUser.java" />
+        <option value="$PROJECT_DIR$/src/app/view/ViewEpisode.java" />
+        <option value="$PROJECT_DIR$/src/app/view/StUB.java" />
+        <option value="$PROJECT_DIR$/src/app/view/RateEpisode.java" />
+        <option value="$PROJECT_DIR$/src/app/view/StUBLauncher.java" />
+      </list>
+    </option>
+  </component>
+  <component name="NamedScopeManager">
+    <scope name="src" pattern="" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="395" />
+    <option name="y" value="415" />
+    <option name="width" value="1380" />
+    <option name="height" value="780" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="STUB_Yeste_Guerrero_Cabezas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="STUB_Yeste_Guerrero_Cabezas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="STUB_Yeste_Guerrero_Cabezas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="STUB_Yeste_Guerrero_Cabezas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="STUB_Yeste_Guerrero_Cabezas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="STUB_Yeste_Guerrero_Cabezas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="STUB_Yeste_Guerrero_Cabezas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="STUB_Yeste_Guerrero_Cabezas" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546021534034" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Desktop" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Users\rcmik\Documents\GitHub\C05\P3\STUB_Yeste_Guerrero_Cabezas\diagrams" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.StUBLauncher">
+    <configuration name="StUBLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="app.view.StUBLauncher" />
+      <module name="STUB_Yeste_Guerrero_Cabezas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app.spec.t6_valorarEpisodio in STUB_Yeste_Guerrero_Cabezas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="STUB_Yeste_Guerrero_Cabezas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.spec.t6_valorarEpisodio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="app.spec.t6_valorarEpisodio" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app.spec.t7_verWatchedList in STUB_Yeste_Guerrero_Cabezas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="STUB_Yeste_Guerrero_Cabezas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.spec.t7_verWatchedList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="app.spec.t7_verWatchedList" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app.spec.t8_verWatchNext in STUB_Yeste_Guerrero_Cabezas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="STUB_Yeste_Guerrero_Cabezas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.spec.t8_verWatchNext.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="app.spec.t8_verWatchNext" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app.spec.t9_verNotStartedYet in STUB_Yeste_Guerrero_Cabezas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="STUB_Yeste_Guerrero_Cabezas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.spec.t9_verNotStartedYet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="app.spec.t9_verNotStartedYet" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.StUBLauncher" />
+        <item itemvalue="JUnit.app.spec.t9_verNotStartedYet in STUB_Yeste_Guerrero_Cabezas" />
+        <item itemvalue="JUnit.app.spec.t8_verWatchNext in STUB_Yeste_Guerrero_Cabezas" />
+        <item itemvalue="JUnit.app.spec.t7_verWatchedList in STUB_Yeste_Guerrero_Cabezas" />
+        <item itemvalue="JUnit.app.spec.t6_valorarEpisodio in STUB_Yeste_Guerrero_Cabezas" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aac20efc-bdbc-406a-a013-25ef9711fae2" name="Default Changelist" comment="" />
+      <created>1545993905247</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1545993905247</updated>
+      <workItem from="1546019132088" duration="619000" />
+      <workItem from="1546019762643" duration="159000" />
+      <workItem from="1546019924855" duration="24000" />
+      <workItem from="1546019966126" duration="778000" />
+      <workItem from="1546020891285" duration="149000" />
+      <workItem from="1546021043378" duration="567000" />
+      <workItem from="1546022115669" duration="1415000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="app_spec_t1_altaNuevoCliente_in_STUB_Yeste_Guerrero_Cabezas - 2018.12.28 at 19h 23m 47s.xml">
+      <configuration name="app.spec.t1_altaNuevoCliente in STUB_Yeste_Guerrero_Cabezas" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="app_spec_t2_loginNuevoCliente_in_STUB_Yeste_Guerrero_Cabezas - 2018.12.28 at 19h 23m 56s.xml">
+      <configuration name="app.spec.t2_loginNuevoCliente in STUB_Yeste_Guerrero_Cabezas" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="app_spec_t3_visualizarCatalogoSeries_in_STUB_Yeste_Guerrero_Cabezas - 2018.12.28 at 19h 24m 03s.xml">
+      <configuration name="app.spec.t3_visualizarCatalogoSeries in STUB_Yeste_Guerrero_Cabezas" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="app_spec_t4_suscribirseAEpisodio_in_STUB_Yeste_Guerrero_Cabezas - 2018.12.28 at 19h 24m 08s.xml">
+      <configuration name="app.spec.t4_suscribirseAEpisodio in STUB_Yeste_Guerrero_Cabezas" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="app_spec_t5_visualizarEpisodio_in_STUB_Yeste_Guerrero_Cabezas - 2018.12.28 at 19h 24m 13s.xml">
+      <configuration name="app.spec.t5_visualizarEpisodio in STUB_Yeste_Guerrero_Cabezas" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="app_spec_t6_valorarEpisodio_in_STUB_Yeste_Guerrero_Cabezas - 2018.12.28 at 19h 24m 19s.xml">
+      <configuration name="app.spec.t6_valorarEpisodio in STUB_Yeste_Guerrero_Cabezas" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="app_spec_t7_verWatchedList_in_STUB_Yeste_Guerrero_Cabezas - 2018.12.28 at 19h 24m 26s.xml">
+      <configuration name="app.spec.t7_verWatchedList in STUB_Yeste_Guerrero_Cabezas" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="app_spec_t8_verWatchNext_in_STUB_Yeste_Guerrero_Cabezas - 2018.12.28 at 19h 24m 37s.xml">
+      <configuration name="app.spec.t8_verWatchNext in STUB_Yeste_Guerrero_Cabezas" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="app_spec_t9_verNotStartedYet_in_STUB_Yeste_Guerrero_Cabezas - 2018.12.28 at 19h 24m 46s.xml">
+      <configuration name="app.spec.t9_verNotStartedYet in STUB_Yeste_Guerrero_Cabezas" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3820000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1738255" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" type="SLIDING" weight="0.33002833" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" type="SLIDING" weight="0.3286119" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.3295302" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="PlantUML" order="8" weight="0.60536915" />
+      <window_info anchor="right" id="Database" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../.." />
+    </ignored-roots>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/libraries/concordion-2.1.1/src/test/java/org/concordion/internal/runner/DefaultConcordionRunnerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libraries/concordion-2.1.1/src/main/java/org/concordion/api/Element.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/STUB_Yeste_Guerrero_Cabezas.plantuml" />
+    <entry file="file://$PROJECT_DIR$/STUB_Yeste_Guerrero_Cabezas.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/STUB_Yeste_G+¦mez_Cabezas.iml" />
+    <entry file="file://$PROJECT_DIR$/STUB_Yeste_Guerrero_Cabezas1.iml" />
+    <entry file="file://$PROJECT_DIR$/STUB_Yeste_Gómez_Cabezas.iml" />
+    <entry file="file://$PROJECT_DIR$/libraries/concordion-2.1.1/src/test/java/spec/concordion/common/command/verifyRows/strategies/BaseMatchStrategyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/resources/resources.plantuml" />
+    <entry file="file://$PROJECT_DIR$/src/app/view/view.plantuml" />
+    <entry file="file://$PROJECT_DIR$/src/app/view/StUB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1546020266535" expanded="false" signature="19069:19901" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/view/RegisterUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <marker date="1546018597770" expanded="false" signature="16567:17441" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/view/RateEpisode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding>
+            <element signature="e#1488#1518#0" expanded="true" />
+            <marker date="1546021612873" expanded="false" signature="8810:9241" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/view/LogInUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1675">
+          <caret line="67" column="8" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1546018597729" expanded="false" signature="9679:10149" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/view/ViewEpisode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1546019899235" expanded="false" signature="9016:9436" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagrams/Modelo de Dominio.puml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagrams/controller.plantuml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagrams/model.plantuml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagrams/resources.plantuml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/diagrams/view.plantuml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/view/StUBLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <folding>
+            <element signature="e#91#92#0" expanded="true" />
+            <element signature="e#138#139#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>main</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>concordion-2.1.1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <last-edited>src</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+          <order>
+            <scope name="src" />
+          </order>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

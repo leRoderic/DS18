@@ -1,0 +1,59 @@
+<html xmlns:c="http://www.concordion.org/2007/concordion">
+<head>
+    <title>US3 - Visualizar Catálogo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>US3 - Visualizar Catálogo</h1>
+
+<p>
+    <b>COMO</b> <span style="color:Blue;">[Usuario registrado y logueado]</span>
+    <b>QUIERO</b> <span style="color:Blue;">[Ver el catálogo de series]</span>
+    <b>PARA</b> <span style="color:Blue;">[Encontrar una serie de mi agrado]</span>
+</p>
+<div c:example="CheckCatalog">
+    <h3>T3.1 - Visualizar series no incluidas</h3>
+    <p>Cuando el usuario pide ver el catálogo, el sistema le muestra las series disponibles. Para comprobarlo, solicitaremos
+    al sistema series que no estan en la base de datos.</p>
+    <p>Dadas las series siguientes:</p>
+    <table>
+        <tr><th>Nombre</th><th>ID</th><th>Nº Temporadas</th><th>Nº Episodios</th><th>Productora</th></tr>
+        <tr><td>Game of Thrones</td><td>gofthrones</td><td>5</td><td>15</td><td>Home_Box_Office</td></tr>
+        <tr><td>Penny Dreadful</td><td>pdreadful</td><td>2</td><td>6</td><td>Neal_Street_Productions</td></tr>
+        <tr><td>Black Mirror</td><td>bmirror</td><td>3</td><td>7</td><td>Zeppotron</td></tr>
+        <tr><td>Sons of Anarchy</td><td>sofanarchy</td><td>3</td><td>9</td><td>SutterInk</td></tr>
+        <tr><td>Stranger Things</td><td>sthings</td><td>1</td><td>5</td><td>Zeppotron</td></tr>
+    </table>
+    <p>Obtenemos que:</p>
+    <table c:execute="#valid=isInCatalog(#idSerie)">
+        <tr><th>Nombre</th><th c:set="#idSerie">ID</th><th c:assert-equals="#valid">Resultado</th></tr>
+        <tr><td>Game of Thrones</td><td>gofthrones</td><td>Serie existe</td></tr>
+        <tr><td>Penny Dreadful</td><td>pdreadful</td><td>Serie existe</td></tr>
+        <tr><td>Samsung</td><td>intel</td><td>Serie no existe</td></tr>
+        <tr><td>Black Mirror</td><td>bmirror</td><td>Serie existe</td></tr>
+        <tr><td>Sons of Anarchy</td><td>sofanarchy</td><td>Serie existe</td></tr>
+        <tr><td>Family Guy</td><td>fguy</td><td>Serie no existe</td></tr>
+        <tr><td>Stranger Things</td><td>sthings</td><td>Serie existe</td></tr>
+        <tr><td>La Casa de Papel</td><td>ldpapel</td><td>Serie no existe</td></tr>
+    </table>
+</div>
+<div c:execute="clearCatalog()" c:example="CheckEmptyCatalog">
+    <h3>T3.2 - Visualizar catálogo vacío</h3>
+    <p>En caso que el usuario pida ver el catálogo y este esté vacío, el sistema le informará mediante un mensaje y le
+    mostrará el catálogo vacío. Para comprobarlo, vaciaremos el catálogo y pediremos al sistema el catálogo.</p>
+    <p>Dadas las series siguientes:</p>
+    <table>
+        <tr><th>Nombre</th><th>ID</th><th>Nº Temporadas</th><th>Nº Episodios</th><th>Productora</th></tr>
+    </table>
+    <p>Obtenemos que:</p>
+    <table c:execute="#valid=chkEmptyCatalog()">
+        <tr><th>Nombre</th><th c:set="#idSerie">ID</th><th c:assert-equals="#valid">Resultado</th></tr>
+        <tr><td>Game of Thrones</td><td>gofthrones</td><td>Catálogo vacío, no hay series disponibles</td></tr>
+        <tr><td>Penny Dreadful</td><td>pdreadful</td><td>Catálogo vacío, no hay series disponibles</td></tr>
+        <tr><td>Black Mirror</td><td>bmirror</td><td>Catálogo vacío, no hay series disponibles</td></tr>
+        <tr><td>Sons of Anarchy</td><td>sofanarchy</td><td>Catálogo vacío, no hay series disponibles</td></tr>
+    </table>
+</div>
+
+</body>
+</html>

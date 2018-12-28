@@ -1,0 +1,63 @@
+<html xmlns:c="http://www.concordion.org/2007/concordion">
+<head>
+    <title>US4 - Suscribirse a episodio</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>US4 - Suscribirse a episodio</h1>
+<p>
+    <b>COMO</b> <span style="color:Blue;">[Usuario registrado y logeado]</span>
+    <b>QUIERO</b> <span style="color:Blue;">[Suscribirme a un episodio]</span>
+    <b>PARA</b> <span style="color:Blue;">[Para no perderme ningún episodio]</span>
+</p>
+<div c:example="newSubscription">
+    <h3>T4.1 - Suscripción a nuevo episodio </h3>
+    <p>Los usuarios solamente se pueden suscribir a episodios que ya han visto. Por tanto, para el usuario con id c1 vamos a comprobar que se hacen las suscripciones
+    en los casos en los cuales es posible</p>
+    <p>Dados los episodios siguientes:</p>
+    <table>
+        <tr><th>Título</th><th>Temporada</th><th>idSerie</th></tr>
+        <tr><td>Episode #1.3</td><td>1</td><td>wdead</td></tr>
+        <tr><td>Chapter Four: The Body</td><td>1</td><td>sthings</td></tr>
+        <tr><td>White Bear</td><td>2</td><td>bmirror</td></tr>
+        <tr><td>The house of black and white</td><td>5</td><td>gofthrones</td></tr>
+        <tr><td>Seeds</td><td>1</td><td>sofanarchy</td></tr>
+    </table>
+    <p>Reproduciendo estos episodios:</p>
+    <table c:execute="playEpisode(#episodi, #idSerie, #numTemporada, #idUser)">
+        <tr><th c:set="#episodi">Episodio</th><th c:set="#numTemporada">Temporada</th><th c:set="#idSerie">IDSerie</th><th c:set="#idUser">Usuario</th></tr>
+        <tr><td>Chapter Four: The Body</td><td>1</td><td>sthings</td><td>c1</td></tr>
+        <tr><td>The house of black and white</td><td>5</td><td>gofthrones</td><td>c1</td></tr>
+        <tr><td>Seeds</td><td>1</td><td>sofanarchy</td><td>c1</td></tr>
+    </table>
+    <p>La suscripción se puede realizar de la siguiente manera:</p>
+    <table c:execute="#valid=addSubscription(#id, #episodi, #numTemporada, #idSerie)">
+        <tr><th c:set="#id">Usuario</th><th c:set="#episodi">Episodio</th><th c:set="#numTemporada">Temporada</th><th c:set="#idSerie">IDSerie</th><th c:assert-equals="#valid">Resultado</th></tr>
+        <tr><td>c2</td><td>Episode #1.1</td><td>1</td><td>wdead</td><td>Suscripción no realizada</td></tr>
+        <tr><td>c1</td><td>Chapter Four: The Body</td><td>1</td><td>sthings</td><td>Suscripción realizada</td></tr>
+        <tr><td>c1</td><td>White Bear</td><td>2</td><td>bmirror</td><td>Suscripción no realizada</td></tr>
+        <tr><td>c1</td><td>The house of black and white</td><td>5</td><td>gofthrones</td><td>Suscripción realizada</td></tr>
+    </table>
+</div>
+<div c:example="doubleSubscription">
+    <h3>T4.2 - Suscripción a un episodio ya suscrito </h3>
+    <p>Los usuarios solamente se pueden suscribir una vez a un episodio, así que no se podrá suscribir a los que ya se esté suscrito</p>
+    <p>Reproduciendo estos episodios:</p>
+    <table c:execute="playEpisode(#episodi, #id, #numTemporada, #idUser)">
+        <tr><th c:set="#episodi">Episodio</th><th c:set="#numTemporada">Temporada</th><th c:set="#id">IDSerie</th><th c:set="#idUser">Usuario</th></tr>
+        <tr><td>Episode #1.3</td><td>1</td><td>wdead</td><td>c1</td></tr>
+        <tr><td>White Bear</td><td>2</td><td>bmirror</td><td>c1</td></tr>
+        <tr><td>Seeds</td><td>1</td><td>sofanarchy</td><td>c1</td></tr>
+    </table>
+    <p>Ahora nos suscribimos a los siguientes episodios:</p>
+    <table c:execute="#valid=addSubscription(#id, #episodi, #numTemporada, #idSerie)">
+        <tr><th c:set="#id">Usuario</th><th c:set="#episodi">Episodio</th><th c:set="#numTemporada">Temporada</th><th c:set="#idSerie">IDSerie</th><th c:assert-equals="#valid">Resultado</th></tr>
+        <tr><td>c1</td><td>Episode #1.3</td><td>1</td><td>wdead</td><td>Suscripción realizada</td></tr>
+        <tr><td>c1</td><td>Chapter Four: The Body</td><td>1</td><td>sthings</td><td>Suscripción no realizada</td></tr>
+        <tr><td>c1</td><td>Seeds</td><td>1</td><td>sofanarchy</td><td>Suscripción realizada</td></tr>
+        <tr><td>c1</td><td>The house of black and white</td><td>5</td><td>gofthrones</td><td>Suscripción no realizada</td></tr>
+        <tr><td>c1</td><td>White Bear</td><td>2</td><td>bmirror</td><td>Suscripción realizada</td></tr>
+    </table>
+</div>
+</body>
+</html>

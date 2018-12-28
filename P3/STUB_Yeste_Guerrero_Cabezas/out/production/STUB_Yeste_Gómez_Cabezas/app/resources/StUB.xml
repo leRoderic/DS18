@@ -1,0 +1,1153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE STUB>
+
+<STUB>
+
+<!-- SERIES -->
+	<Series>
+	<Serie id="bbad">
+		<title>Breaking Bad</title>
+		<description>Tras cumplir 50 aׯs, Walter White (Bryan Cranston), un profesor de quӭica de un instituto de Albuquerque, Nuevo Mϸico, se entera de que tiene un cȮcer de pulmخ incurable. Casado con Skyler (Anna Gunn) y con un hijo discapacitado (RJ Mitte), la brutal noticia lo impulsa a dar un drȳtico cambio a su vida: decide, con la ayuda de un antiguo alumno (Aaron Paul), fabricar anfetaminas y ponerlas a la venta. Lo que pretende es liberar a su familia de problemas econحicos cuando se produzca el fatal desenlace</description>
+		<artists>
+			<artist id="1" nom="V.Gilligan" tipus="director" nacionalitat="EEUU"></artist>
+            <artist id="2" nom="B.Cranston" tipus="actor" nacionalitat="EEUU"></artist>
+            <artist id="3" nom="A.Paul" tipus="actor" nacionalitat="EEUU"></artist>
+            <artist id="4" nom="D.Norris" tipus="actor" nacionalitat="EEUU"></artist> 
+		</artists>
+		<productora id="1" name="AMC:Gran_Via_Productions"></productora>
+		<temporades>
+			<temporada>
+				<numeroTemporada>1</numeroTemporada>
+				<numeroEpisodis>4</numeroEpisodis>
+				<episodis>
+                    
+					<episodi>
+						<title>Piloto</title>
+                        <duracio>55:00:00</duracio>
+						<idioma>VOSE</idioma>
+						<description>Walter White, era un famoso investigador quӭico de un prestigioso Laboratorio del Gobierno, que a dӡ de hoy ha sido relegado a enseסr a apȴicos estudiantes de un Instituto en Albuquerque. Para poder llegar a fin de mes tambiϮ tiene un trabajo a media jornada en un lavadero de coches. Ademȳ, Ϭ y su esposa, Skyler, una mujer que se ha forjado una modesta carrera en la compra-venta de artӣulos por eBay, estȮ criando a Walter, Jr., un joven de diecisiete aׯs, con una gran fuerza de voluntad, que tiene parȬisis cerebral lo que presenta un continuo reto para la familia. Pero todas estas dificultades palidecen en relaciخ con el nuevo descubrimiento de Walter: tiene cȮcer con un pronسtico de dos aׯs de vida.</description>
+						<data>20/01/2008</data>
+					</episodi>
+                    
+                    <episodi>
+                        <title>Cat's in the Bag</title>
+                        <duracio>55:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Ahora que su incursiخ inicial en el mundo del trȦico de drogas ha terminado con varias muertes, Walter no estǠseguro de tener lo que hay que tener para ser socio de Jesse. Decidido en acabar con el negocio tan pronto escondan los cadȶeres, las cosas dan un giro inesperado cuando uno de los muertos vuelve a la vida...</description>
+                        <data>27/01/2008</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>..And The Bag's In The River</title>
+                        <duracio>55:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Walter no sabe si matar o no a Krazy-8. Mientras, Marie cree que su hijo estǠenganchado a la marihuana y le pide a Hank que le de algݮ susto para que lo deje. Walter decide invitar a comer a Krazy-8, pero las cosas se tuercen cuando se marea mientras baja unos escalones. Le contarǠlo que pasa?</description>
+                        <data>10/02/2008</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>Cancer Man</title>
+                        <duracio>55:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Ahora que Skyler sabe su secreto, y sin conocer que el equipo de la DEA estǠcercano a descubrir su negocio de drogas, Walt decide contar en una barbacoa familiar las novedades de su cȮcer. Aunque Hank le ofrece 5.000 dجares para su tratamiento, Ϭ rechaza el dinero. Le dice a Skyler que recurrirǠal dinero de su pensiخ, pero en realidad utilizarǠel dinero que han conseguido Jesse y Ϭ vendiendo drogas.</description>
+                        <data>10/02/2008</data>
+                    </episodi>
+                    
+				</episodis>
+			</temporada>
+            
+            <temporada>
+                <numeroTemporada>2</numeroTemporada>
+                <numeroEpisodis>3</numeroEpisodis>
+                <episodis>
+                    
+                    <episodi>
+                        <title>Seven Thirty-Seven</title>
+                        <duracio>55:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Walt y Jesse intentar poner fin a su acuerdo con Tuco. Mientras tanto, Hank intenta arreglar la relaciخ entre Marie y Skyler.</description>
+                        <data>08/03/2009</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>Grilled</title>
+                        <duracio>55:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Con Walt y Jesse atrapados por Tuco, Marie y Hank intentan reconfortar a Skyler tras su desapariciخ.</description>
+                        <data>15/03/2009</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>Bit by a Dead Bee</title>
+                        <duracio>55:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Walt y Jesse tratan de cubrir sus huellas pero no resulta muy efectivo. Mientras tanto, la DEA sigue una pista que podrӡ llegar directamente hasta ellos.
+                        </description>
+                        <data>22/03/2009</data>
+                    </episodi>
+                </episodis>
+            </temporada>
+            
+            <temporada>
+                <numeroTemporada>3</numeroTemporada>
+                <numeroEpisodis>5</numeroEpisodis>
+                <episodis>
+                    
+                    <episodi>
+                        <title>No more</title>
+                        <duracio>55:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Todo Alburquerque queda paralizado despuϳ del accidente aϲeo. Walter White estǠviviendo solo en su casa. Su esposa, Skyler se ha mudado con su hijo y su reciϮ nacida hija para darle oportunidad a Walt para que empaque.</description>
+                        <data>21/03/2010</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>Horse with no name</title>
+                        <duracio>55:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Walt tiene problemas ajustȮdose a su nueva vida. Se niega a seguir manufacturando el producto.
+                        </description>
+                        <data>28/03/2009</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>I.F.T</title>
+                        <duracio>55:15:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Walt regresa a su casa y le dice a Skyler que no tiene intenciخ de irse, Walter Jr. se alegra de saber que su padre estǠde vuelta.
+                        </description>
+                        <data>04/04/2010</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>Green Light</title>
+                        <duracio>55:10:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Jesse intercambia con una cajera metanfetamina a cambio de pagar por la gasolina.
+                        </description>
+                        <data>11/04/2010</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>Mȳ</title>
+                        <duracio>55:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Gus trata de convencer a Walt a regresar al negocio con un "super-laboratorio" de alta tecnologӡ
+                        </description>
+                        <data>18/04/2010</data>
+                    </episodi>
+                    
+                </episodis>
+            </temporada>
+            
+		</temporades>
+	</Serie>
+    
+    <Serie id="mrobot">
+        <title>Mr Robot</title>
+        <description>Elliot Anderson es un joven y brillante programador con problemas para las relaciones sociales que durante el dӡ trabaja como tϣnico de ciberseguridad de una importante empresa informȴica y por la noche es un desinteresado justiciero cibernϴico, que se verǠenvuelto en una oscura trama.</description>
+        <artists>
+            <artist id="5" nom="S.Esmail" tipus="director" nacionalitat="EEUU"></artist>
+            <artist id="6" nom="R.Malek" tipus="actor" nacionalitat="EEUU"></artist>                
+            <artist id="7" nom="C.Slater" tipus="actor" nacionalitat="EEUU"></artist>
+                        
+        </artists>
+        <productora id="2" name="USA_Network_Universal_Cable_Productions"></productora>
+        <temporades>
+            <temporada>
+                <numeroTemporada>1</numeroTemporada>
+                <numeroEpisodis>3</numeroEpisodis>
+                <episodis>
+                    <episodi>
+                        <title>eps1.0_hellofriend.mov</title>
+                        <duracio>45:00:00</duracio>
+                        <idioma>ES</idioma>
+                        <description>Elliot Alderson trabaja en Allsafe, una empresa de seguridad informȴica. Por la noche, se dedica a hackear las cuentas de redes sociales y bancarias de sus amigos</description>
+                        <data>24/06/2015</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>eps1.1_ones-and-zer0es.mpeg</title>
+                        <duracio>45:00:00</duracio>
+                        <idioma>ES</idioma>
+                        <description>Elliott rechaza una bien remunerada oferta de trabajo ofrecida por Tyrell Wellick, el nuevo CTO provisional de E Corp.</description>
+                        <data>01/07/2015</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>eps1.2_d3bug.mkv</title>
+                        <duracio>45:00:00</duracio>
+                        <idioma>ES</idioma>
+                        <description>Tyrell pega una paliza a un mendigo para liberar estrϳ. Seguidamente, tiene relaciones con un hombre para conseguir instalar un rootkit en su telϦono.</description>
+                        <data>08/07/2015</data>
+                    </episodi>
+                </episodis>
+            </temporada>
+        </temporades>
+    </Serie>
+    
+    <Serie id="gofthrones">
+        <title>Game of Thrones</title>
+        <description>La historia se desarrolla en un mundo ficticio de carȣter medieval donde hay Siete Reinos. Hay tres lӮeas argumentales principales: la crخica de la guerra civil dinȳtica por el control de Poniente entre varias familias nobles que aspiran al Trono de Hierro, la creciente amenaza de los Otros, seres desconocidos que viven al otro lado de un inmenso muro de hielo que protege el Norte de Poniente, y el viaje de Daenerys Targaryen, la hija exiliada del rey que fue asesinado en una guerra civil anterior, y que pretende regresar a Poniente para reclamar sus derechos. Tras un largo verano de varios aׯs, el temible invierno se acerca a los Siete Reinos. Lord Eddard 'Ned' Stark, seׯr de Invernalia, deja sus dominios para ir a la corte de su amigo, el rey Robert Baratheon en Desembarco del Rey, la capital de los Siete Reinos. Stark se convierte en la Mano del Rey e intenta desentraסr una maraס de intrigas que pondrǠen peligro su vida y la de todos los suyos. Mientras tanto diversas facciones conspiran con un solo objetivo: apoderarse del trono.</description>
+        <artists>
+           <artist id="8" nom="D.Benioff" tipus="director" nacionalitat="EEUU"></artist>
+           <artist id="9" nom="G.R.R.Martin" tipus="director" nacionalitat="EEUU"></artist>
+           <artist id="10" nom="L.Headey" tipus="actor" nacionalitat="EEUU"></artist> 
+           <artist id="11" nom="E.Clarke" tipus="actor" nacionalitat="UK"></artist>
+           <artist id="12" nom="P.Pascal" tipus="director" nacionalitat="CHL"></artist>
+           
+        </artists>
+        <productora id="3" name="Home_Box_Office"></productora>
+        <temporades>
+            <temporada>
+                <numeroTemporada>1</numeroTemporada>
+                <numeroEpisodis>3</numeroEpisodis>
+                <episodis>
+                    <episodi>
+                        <title>Winter Is Coming</title>
+                        <duracio>65:13:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>El rey Robert Baratheon de Poniente viaja al Norte para ofrecerle a su viejo amigo Ned Stark, GuardiȮ del Norte y Seׯr de Invernalia, el puesto de Mano del Rey. </description>
+                        <data>17/04/2011</data>
+                    </episodi>
+                    <episodi>
+                        <title>The Kingsroad</title>
+                        <duracio>60:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Tras aceptar su nuevo rol como Mano del Rey, Ned parte hacia Desembarco del Rey con sus hijas Sansa y Arya. </description>
+                        <data>24/04/2011</data>
+                    </episodi>
+                    <episodi>
+                        <title>Lord Snow</title>
+                        <duracio>61:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Ned se une al Consejo Privado del Rey en Desembarco del Rey, la capital de los Siete Reinos, y descubre la mala administraciخ que sufre Poniente</description>
+                        <data>01/05/2011</data>
+                    </episodi>
+                </episodis>
+            </temporada>
+            
+            <temporada>
+                <numeroTemporada>2</numeroTemporada>
+                <numeroEpisodis>3</numeroEpisodis>
+                <episodis>
+                    <episodi>
+                        <title>The north remembers</title>
+                        <duracio>45:15:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Tyrion llega para salvar la corona de Joffrey de viejas y nuevas amenazas.
+                        </description>
+                        <data>01/04/2012</data>
+                    </episodi>
+                    <episodi>
+                        <title>The Night Lands</title>
+                        <duracio>60:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Arya comparte un secreto con un recluta familiar.</description>
+                        <data>08/04/2012</data>
+                    </episodi>
+                    <episodi>
+                        <title>What is dead may never die</title>
+                        <duracio>61:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Tyrion desenmascara a un espӡ. Catelyn conoce a los nuevos reyes. Bran sueס.</description>
+                        <data>15/05/2012</data>
+                    </episodi>
+                </episodis>
+            </temporada>
+            
+            <temporada>
+                <numeroTemporada>3</numeroTemporada>
+                <numeroEpisodis>3</numeroEpisodis>
+                <episodis>
+                    <episodi>
+                        <title>Valar Dohaeris</title>
+                        <duracio>50:10:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Bran Stark encuentra a dos nuevos acompaסntes en su camino al Muro.</description>
+                        <data>07/04/2013</data>
+                    </episodi>
+                    <episodi>
+                        <title>Dark wings, dark words</title>
+                        <duracio>60:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Arya comparte un secreto con un recluta familiar.</description>
+                        <data>08/04/2012</data>
+                    </episodi>
+                    <episodi>
+                        <title>Walk of punishment</title>
+                        <duracio>41:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Catelyn asiste al funeral de ... en Aguasdulces junto con Robb.</description>
+                        <data>15/05/2012</data>
+                    </episodi>
+                </episodis>
+            </temporada>
+            
+            <temporada>
+                <numeroTemporada>4</numeroTemporada>
+                <numeroEpisodis>3</numeroEpisodis>
+                <episodis>
+                    <episodi>
+                        <title>Two swords</title>
+                        <duracio>50:10:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Tywin Lannister regala a su hijo Jaime, nuevo comandante de la Guardia Real, una espada de acero valyrio.</description>
+                        <data>06/04/2014</data>
+                    </episodi>
+                    <episodi>
+                        <title>The lion and the rose</title>
+                        <duracio>60:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Ramsay recibe a su padre lord Roose Bolton en Fuerte Terror. </description>
+                        <data>13/04/2014</data>
+                    </episodi>
+                    <episodi>
+                        <title>Breaker of chains</title>
+                        <duracio>41:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Tras los acontecimientos de la boda del ..., ... encuentra un aliado para escapar de Desembarco del Rey.</description>
+                        <data>20/04/2014</data>
+                    </episodi>
+                </episodis>
+            </temporada>
+            
+            <temporada>
+                <numeroTemporada>5</numeroTemporada>
+                <numeroEpisodis>3</numeroEpisodis>
+                <episodis>
+                    <episodi>
+                        <title>The wars to come</title>
+                        <duracio>45:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>En un flashback se muestra a Cersei de niס preguntȮdole a una adivina por su futuro.</description>
+                        <data>12/04/2015</data>
+                    </episodi>
+                    <episodi>
+                        <title>The house of black and white</title>
+                        <duracio>60:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>En Desembarco del Rey, ... recibe una estatua con el collar de ... y ... se dispone a ir por ella a ..., pidiendo la ayuda de ....</description>
+                        <data>19/04/2015</data>
+                    </episodi>
+                    <episodi>
+                        <title>High Sparrow</title>
+                        <duracio>41:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>En Desembarco del Rey, ... y ... contraen nupcias.</description>
+                        <data>26/05/2015</data>
+                    </episodi>
+                </episodis>
+            </temporada>
+        </temporades>
+    </Serie>
+    
+    <Serie id="pdreadful">
+        <title>Penny Dreadful</title>
+        <description>La vidente Vanessa Ives (Eva Green) y Sir Malcolm Murray (Timothy Dalton) contratan al pistolero Ethan Chandler (Josh Hartnett) y al doctor Victor Frankenstein (Harry Treadaway) para encontrar a Mina Murray (Olivia Llewellyn), la hija de Sir Malcolm. Lo que no imaginan es que, para dar con ella, tendrȮ que descifrar un misterio aterrador, el cual los conducirǠa una oscura y oculta verdad en la cual, la principal protagonista, serǠVanessa Ives.</description>
+        <artists>
+            <artist id="13" nom="E.Green" tipus="director" nacionalitat="FR"></artist>            
+            <artist id="14" nom="T.Dalton" tipus="actor" nacionalitat="UK"></artist>
+            <artist id="15" nom="J.Harnett" tipus="actor" nacionalitat="EEUU"></artist>
+            <artist id="16" nom="H.Treadaway" tipus="actor" nacionalitat="UK"></artist>
+        </artists>
+        <productora id="4" name="Neal_Street_Productions"></productora>
+        <temporades>
+            <temporada>
+                <numeroTemporada>1</numeroTemporada>
+                <numeroEpisodis>3</numeroEpisodis>
+                <episodis>
+                    <episodi>
+                        <title>Night Work</title>
+                        <duracio>75:00:00</duracio>
+                        <idioma>EN</idioma>
+                        <description>The episode opens in Victorian England on September 22, 1891, with the brutal abduction of a woman and her daughter who are later found mutilated and dismembered.</description>
+                        <data>11/05/2014</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>Sence</title>
+                        <duracio>70:00:00</duracio>
+                        <idioma>EN</idioma>
+                        <description>Sir Malcolm offers his assistance with the "Ripper" case, proclaiming that they should be looking for a beast, not a man.</description>
+                        <data>18/05/2014</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>Resurrection</title>
+                        <duracio>45:00:00</duracio>
+                        <idioma>EN</idioma>
+                        <description>Victor is forced to listen to the story of his first creation.</description>
+                        <data>25/05/2014</data>
+                    </episodi>
+                </episodis>
+            </temporada>
+            
+            <temporada>
+                <numeroTemporada>2</numeroTemporada>
+                <numeroEpisodis>3</numeroEpisodis>
+                <episodis>
+                    <episodi>
+                        <title>Fresh Hell</title>
+                        <duracio>55:00:00</duracio>
+                        <idioma>EN</idioma>
+                        <description>Vanessa is barraged by an onslaught of disturbing occult images brought on by the mysterious Evelyn Poole.</description>
+                        <data>19/04/2015</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>Verbis Diabolo</title>
+                        <duracio>80:00:00</duracio>
+                        <idioma>EN</idioma>
+                        <description>A distressed Vanessa looks for comfort from Sir Malcolm, who takes her to an underground care facility for people suffering from cholera.</description>
+                        <data>10/05/2015</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>The nightcomers</title>
+                        <duracio>45:00:00</duracio>
+                        <idioma>EN</idioma>
+                        <description>A young Vanessa harnesses her fledgling powers as a witch from the Cut-Wife (real name Joan Clayton)</description>
+                        <data>17/05/2015</data>
+                    </episodi>
+                </episodis>
+            </temporada>
+        </temporades>
+    </Serie>
+ 
+    <Serie id="bmirror">
+        <title>Black Mirror</title>
+        <description>A television anthology series that shows the dark side of life and technology.</description>
+        <artists>
+            <artist id="17" nom="H.John-Kamen" tipus="director" nacionalitat="UK"></artist>
+			<artist id="18" nom="C.Martin Hill" tipus="actor" nacionalitat="UK"></artist>            
+            <artist id="19" nom="P.Blackwell" tipus="actor" nacionalitat="EEUU"></artist>            
+            
+        </artists>
+        <productora id="5" name="Zeppotron"></productora>
+        <temporades>
+            <temporada>
+                <numeroTemporada>1</numeroTemporada>
+                <numeroEpisodis>3</numeroEpisodis>
+                <episodis>
+                    <episodi>
+                        <title>The National Anathem</title>
+                        <duracio>90:00:00</duracio>
+                        <idioma>EN</idioma>
+                        <description>Prime Minister Michael Callow faces a shocking dilemma when Princess Susannah, a much-loved member of the Royal Family, is kidnapped.</description>
+                        <data>04/12/2011</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>Fifteen Million Merits</title>
+                        <duracio>90:00:00</duracio>
+                        <idioma>EN</idioma>
+                        <description>After failing to impress the judges on a singing competition show, a woman must either perform degrading acts or return to a slave-like existence.</description>
+                        <data>11/12/2011</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>The Entire History of You</title>
+                        <duracio>90:00:00</duracio>
+                        <idioma>EN</idioma>
+                        <description>In the near future, everyone has access to a memory implant that records everything they do, see and hear - a sort of Sky Plus for the brain. You need never forget a face again - but is that always a good thing?</description>
+                        <data>18/12/2011</data>
+                    </episodi>
+                </episodis>
+            </temporada>
+            
+            <temporada>
+                <numeroTemporada>2</numeroTemporada>
+                <numeroEpisodis>3</numeroEpisodis>
+                <episodis>
+                    <episodi>
+                        <title>Be Right Back</title>
+                        <duracio>90:00:00</duracio>
+                        <idioma>EN</idioma>
+                        <description>Martha is devastated when her partner Ash is killed in a road accident on the day they planned to move to a country cottage. At Ash's funeral, Martha's friend Sarah tells her of a new service which allows people to communicate with their deceased loved ones by using all their online communications and contributions. Martha is appalled, and decides to stay in the cottage despite her sister's view she is isolating herself. One day Martha gets a message from Ash, and she realises Sarah has signed her up for the service. Initially, Martha's displeased but, on finding ...</description>
+                        <data>11/02/2013</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>White Bear</title>
+                        <duracio>90:00:00</duracio>
+                        <idioma>EN</idioma>
+                        <description>Victoria wakes with a head-ache and bandaged wrists,pills spilled on the floor. A strange sign is flickering on the television but she can remember nothing. Outside she meets Jem, a young woman who explains that the signal on the television set comes from the White Bear transmitter. It has turned most of the population into voyeurs who do nothing but watch and sometimes film as a deadly elite known as the hunters kill those unaffected by the signal,such as Jem and Victoria. Escaping from a hunter they reach the White Bear transmitter,which they intend to destroy...</description>
+                        <data>18/02/2013</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>The Waldo Moment</title>
+                        <duracio>90:00:00</duracio>
+                        <idioma>EN</idioma>
+                        <description>Comedian Jamie Slater provides the voice for Waldo,a blue cartoon bear who interviews politicians for a late night topical satire show where Waldo generally humiliates them. Jamie's producer Jack Napier suggests Waldo stands as the local MP in the upcoming election,against pompous Tory boy Liam Monroe - one of Waldo's interview victims. A reluctant Jamie agrees and meets the Labour candidate Gwendolyn,with whom he has a one night stand but is later told to keep away from by her campaign manager.</description>
+                        <data>25/02/2013</data>
+                    </episodi>
+                </episodis>
+            </temporada>
+
+            <temporada>
+                <numeroTemporada>3</numeroTemporada>
+                <numeroEpisodis>1</numeroEpisodis>
+                <episodis>
+                    <episodi>
+                        <title>White Christmas</title>
+                        <duracio>90:00:00</duracio>
+                        <idioma>EN</idioma>
+                        <description>In a mysterious and remote snowy outpost, Matt and Potter share an interesting Christmas meal together, swapping creepy tales of their earlier lives in the outside world.</description>
+                        <data>16/12/2014</data>
+                    </episodi>
+                </episodis>
+            </temporada>
+        </temporades>
+    </Serie>
+
+    <Serie id="sofanarchy">
+        <title>Sons of Anarchy</title>
+        <description>A man in his early 30s struggles to find a balance in his life between being a new dad and his involvement in a motorcycle club.</description>
+        <artists>
+            <artist id="20" nom="C.Hunnam" tipus="director" nacionalitat="UK"></artist>
+            <artist id="21" nom="K.Sagal" tipus="actor" nacionalitat="EEUU"></artist>
+			<artist id="22" nom="M.Boone_Junior" tipus="actor" nacionalitat="EEUU"></artist>
+            <artist id="23" nom="K.Sutter" tipus="actor" nacionalitat="EEUU"></artist>
+                        
+        </artists>
+        <productora id="6" name="SutterInk"></productora>
+        <temporades>
+            <temporada>
+                <numeroTemporada>1</numeroTemporada>
+                <numeroEpisodis>3</numeroEpisodis>
+                <episodis>
+                    <episodi>
+                        <title>Pilot</title>
+                        <duracio>55:00:00</duracio>
+                        <idioma>EN</idioma>
+                        <description>A rival gang steals the Sons' stockpile of assault rifles, while Jax's ex-wife's drug overdose leads to an emergency c-section and life-threatening surgery for their baby.</description>
+                        <data>15/02/2008</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>Seeds</title>
+                        <duracio>55:00:00</duracio>
+                        <idioma>EN</idioma>
+                        <description>The gang hope to be financially in the clear after their successful arms sale. But the ATF will be all over if they get linked to the warehouse arson where two Mexican immigrants were found. So the Sons exert pressure and call favors with authorities and auxiliaries, any way they can, including Jax's sexual excellence, to spy on and sabotage the investigation.</description>
+                        <data>10/09/2008</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>Fun Town</title>
+                        <duracio>50:00:00</duracio>
+                        <idioma>EN</idioma>
+                        <description>When the young daughter of a prominent Charming family is assaulted during a visiting carnival, Samcro races the authorities to capture the assailant. Meanwhile a new shipment of guns arrives from their IRA connection with an additional price. Tara's ex-boyfriend arrives in Charming.</description>
+                        <data>17/09/2008</data>
+                    </episodi>
+                </episodis>
+            </temporada>
+            
+            <temporada>
+                <numeroTemporada>2</numeroTemporada>
+                <numeroEpisodis>3</numeroEpisodis>
+                <episodis>
+                    <episodi>
+                        <title>Albification</title>
+                        <duracio>50:00:00</duracio>
+                        <idioma>EN</idioma>
+                        <description>With the club divided in the wake of a tragic death, Clay sets up a new gun deal with the IRA.</description>
+                        <data>29/03/2009</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>Small Tears</title>
+                        <duracio>50:00:00</duracio>
+                        <idioma>EN</idioma>
+                        <description>Jax's decision without the club's approval doesn't sit well with Clay, especially when it brings dangerous repercussions upon the MC.</description>
+                        <data>29/03/2009</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>Fix</title>
+                        <duracio>50:00:00</duracio>
+                        <idioma>EN</idioma>
+                        <description>The League takes bold new steps in their quest to undermine Samcro, forcing the club to take explosive measures.</description>
+                        <data>22/09/2009</data>
+                    </episodi>
+                </episodis>
+            </temporada>
+
+            <temporada>
+                <numeroTemporada>3</numeroTemporada>
+                <numeroEpisodis>3</numeroEpisodis>
+                <episodis>
+                    <episodi>
+                        <title>So</title>
+                        <duracio>50:00:00</duracio>
+                        <idioma>EN</idioma>
+                        <description>The aftermath of Abel's kidnapping has the Sons reeling - especially Jax, whose grief sends him into deeper turmoil over his future with the MC. Meanwhile Gemma, still on the lam, is hit with some unexpected news from her past.</description>
+                        <data>17/01/2011</data>
+                    </episodi>
+
+                    <episodi>
+                        <title>Oiled</title>
+                        <duracio>50:00:00</duracio>
+                        <idioma>EN</idioma>
+                        <description>To get intel on Abel's whereabouts, Jax and the club help a bounty hunter track down a skip. Meanwhile, Gemma deals with family issues.</description>
+                        <data>24/01/2011</data>
+                    </episodi>
+
+                    <episodi>
+                        <title>Caregiver</title>
+                        <duracio>50:00:00</duracio>
+                        <idioma>EN</idioma>
+                        <description>The club exploits its porn connections to entertain Henry Lin's clients, which doesn't sit well with one member.</description>
+                        <data>31/01/2011</data>
+                    </episodi>
+
+                </episodis>
+            </temporada>
+        </temporades>
+    </Serie>
+    
+    <Serie id="sthings">
+        <title>Stranger Things</title>
+        <description>When a young boy disappears, his mother, a police chief, and his friends must confront terrifying forces in order to get him back.</description>
+        <artists>
+            <artist id="24" nom="W.Ryder" tipus="director" nacionalitat="EEUU"></artist>
+            <artist id="25" nom="D.Harbour" tipus="actor" nacionalitat="EEUU"></artist>
+			<artist id="26" nom="F.Wolfhard" tipus="actor" nacionalitat="EEUU"></artist>			
+                      
+        </artists>
+        <productora id="5" name="Zeppotron"></productora>
+        <temporades>
+            <temporada>
+                <numeroTemporada>1</numeroTemporada>
+                <numeroEpisodis>5</numeroEpisodis>
+                <episodis>
+                    <episodi>
+                        <title>Chapter One: The Vanishing of Will Byers</title>
+                        <duracio>75:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>In a small Indiana town, the disappearance of a young boy sparks a police investigation..</description>
+                        <data>15/07/2016</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>Chapter Two: The Weirdo on Maple Street</title>
+                        <duracio>77:00:00</duracio>
+                        <idioma>ES</idioma>
+                        <description>Mike hides the mysterious girl in his house. Joyce gets a strange phone call.</description>
+                        <data>20/07/2016</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>Chapter Three: Holly, Jolly</title>
+                        <duracio>67:00:03</duracio>
+                        <idioma>EN</idioma>
+                        <description>An increasingly concerned Nancy looks for Barb and finds out what Jonathan's been up to. Joyce is convinced Will is trying to talk to her.</description>
+                        <data>25/07/2016</data>
+                    </episodi>
+
+                    <episodi>
+                        <title>Chapter Four: The Body</title>
+                        <duracio>70:20:09</duracio>
+                        <idioma>EN</idioma>
+                        <description>Refusing to believe Will is dead, Joyce tries to connect with her son. The boys give Eleven a makeover. Johnathan and Nancy form an unlikely alliance.</description>
+                        <data>30/07/2016</data>
+                    </episodi>
+
+                    <episodi>
+                        <title>Chapter Five: The Flea and the Acrobat</title>
+                        <duracio>74:45:10</duracio>
+                        <idioma>EN</idioma>
+                        <description>Hopper breaks into the lab to find the truth about Will's death. The boys try to locate the "gate" that will take them to Will.</description>
+                        <data>03/08/2016</data>
+                    </episodi>
+
+                </episodis>
+            </temporada>
+        </temporades>
+    </Serie>
+    
+    <Serie id="misfits">
+        <title>Misfits</title>
+        <description>A group of young offenders doing community service get struck by lightning during a storm, and begin to develop superpowers.</description>
+        <artists>
+            <artist id="27" nom="N.Stewart-Jarrett" tipus="director" nacionalitat="UK"></artist>
+            <artist id="28" nom="J.Gilgun" tipus="actor" nacionalitat="UK"></artist>
+            <artist id="29" nom="I.Rheon" tipus="actor" nacionalitat="UK"></artist>
+                        
+        </artists>
+        <productora id="7" name="Clerkenwell_Films"></productora>
+        <temporades>
+            <temporada>
+                <numeroTemporada>1</numeroTemporada>
+                <numeroEpisodis>2</numeroEpisodis>
+                <episodis>
+                    <episodi>
+                        <title>Episode #1.1</title>
+                        <duracio>40:00:00</duracio>
+                        <idioma>ES</idioma>
+                        <description>Five young adolescents begin community service under the watchful eye of their probation officer when a freak storm strikes them, granting them supernatural abilities</description>
+                        <data>12/11/2009</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>Episode #1.2</title>
+                        <duracio>42:00:00</duracio>
+                        <idioma>ES</idioma>
+                        <description>Nathan discovers that other people were affected by the storm and fears for his mother. Someone appears to know about the gang's secret agenda.</description>
+                        <data>19/12/2009</data>
+                    </episodi>
+                </episodis>
+            </temporada>
+
+            <temporada>
+                <numeroTemporada>2</numeroTemporada>
+                <numeroEpisodis>2</numeroEpisodis>
+                <episodis>
+                    <episodi>
+                        <title>Episode #2.1</title>
+                        <duracio>40:00:00</duracio>
+                        <idioma>ES</idioma>
+                        <description>Nathan,whose special power is immortality,has been buried alive but he is rescued after a mysterious masked and hooded figure sends Kelly a paper dart reading 'Go To His Grave'.</description>
+                        <data>11/12/2010</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>Episode #2.2</title>
+                        <duracio>42:00:00</duracio>
+                        <idioma>ES</idioma>
+                        <description>Nathan is approached by the tattooed,denim-clad Jamie,who claims to be his half-brother,conceived out of wedlock.</description>
+                        <data>19/12/2010</data>
+                    </episodi>
+                </episodis>
+            </temporada>
+
+            <temporada>
+                <numeroTemporada>3</numeroTemporada>
+                <numeroEpisodis>2</numeroEpisodis>
+                <episodis>
+                    <episodi>
+                        <title>Episode #3.1</title>
+                        <duracio>40:00:00</duracio>
+                        <idioma>ES</idioma>
+                        <description>Whilst Kelly has trouble convincing people of her new power,the skills of a rocket scientist and Curtis finds his new gift,the ability to change sex useful when pursued by the police,the group learns that Nathan has gone to Las Vegas to use his super-power to cheat the casinos. </description>
+                        <data>30/10/2011</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>Episode #3.2</title>
+                        <duracio>42:00:00</duracio>
+                        <idioma>ES</idioma>
+                        <description>Banned from athletics for drug use Curtis sees the opportunity to still compete as his new gender swap identity Melissa,whilst falling for fellow runner Emma. </description>
+                        <data>06/11/2011</data>
+                    </episodi>
+                </episodis>
+            </temporada>
+
+            <temporada>
+                <numeroTemporada>4</numeroTemporada>
+                <numeroEpisodis>2</numeroEpisodis>
+                <episodis>
+                    <episodi>
+                        <title>Episode #4.1</title>
+                        <duracio>40:00:00</duracio>
+                        <idioma>ES</idioma>
+                        <description>After .... was tragically murdered in last season's final episode, and Simon traveled back in time to when he sacrificed his life to save hers, Curtis and Rudy continue their community service</description>
+                        <data>28/10/2012</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>Episode #4.2</title>
+                        <duracio>42:00:00</duracio>
+                        <idioma>ES</idioma>
+                        <description>When the misfits model for a sculpture class for the blind Curtis and Rudy both fall for student Ally but both are rejected as her guide dog picked up the power of telepathy in the storm and is conveying their weaknesses to her. </description>
+                        <data>04/11/2012</data>
+                    </episodi>
+                </episodis>
+            </temporada>
+
+            <temporada>
+                <numeroTemporada>5</numeroTemporada>
+                <numeroEpisodis>2</numeroEpisodis>
+                <episodis>
+                    <episodi>
+                        <title>Episode #5.1</title>
+                        <duracio>40:00:00</duracio>
+                        <idioma>ES</idioma>
+                        <description>Alex recovers from his operation and is followed home by Emma, a woman who tells him that his donor, Neil, had the power to rid people of their super-powers through having sex with him, and persuades him to rid her of her unwanted gift, the ability to cause accidents. He reluctantly complies.</description>
+                        <data>23/10/2013</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>Episode #5.2</title>
+                        <duracio>42:00:00</duracio>
+                        <idioma>ES</idioma>
+                        <description>Rudy is shocked to see his father Geoff (whom he had told he was at university) having sex publicly with another woman, Tina.</description>
+                        <data>30/10/2013</data>
+                    </episodi>
+                </episodis>
+            </temporada>
+        </temporades>
+    </Serie>
+
+    <Serie id="pblinders">
+        <title>Peaky Blinders</title>
+        <description>A gangster family epic set in 1919 Birmingham, England and centered on a gang who sew razor blades in the peaks of their caps, and their fierce boss Tommy Shelby, who means to move up in the world.</description>
+        <artists>
+			<artist id="30" nom="C.Murphy" tipus="director" nacionalitat="EEUU"></artist>
+            <artist id="31" nom="P.Anderson" tipus="actor" nacionalitat="UK"></artist>
+            <artist id="32" nom="J.Cole" tipus="actor" nacionalitat="UK"></artist>
+            
+        </artists>
+        <productora id="8" name="Caryn_Mandabach_Productions"></productora>
+        <temporades>
+            <temporada>
+                <numeroTemporada>1</numeroTemporada>
+                <numeroEpisodis>2</numeroEpisodis>
+                <episodis>
+                    <episodi>
+                        <title>Episode #1.1</title>
+                        <duracio>40:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>In Birmingham just after the Great War trenches veteran Thomas Shelby leads his gang, the Peaky Blinders, so named as they carry lethal razors in their peaked caps, who make money from illegal betting and the black market.</description>
+                        <data>12/11/2009</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>Episode #1.2</title>
+                        <duracio>42:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Thomas continues dating Grace, barmaid at the Garrison pub, unaware that she has been planted by Campbell to spy on his activities.</description>
+                        <data>19/12/2009</data>
+                    </episodi>
+                </episodis>
+            </temporada>
+
+            <temporada>
+                <numeroTemporada>2</numeroTemporada>
+                <numeroEpisodis>2</numeroEpisodis>
+                <episodis>
+                    <episodi>
+                        <title>Episode #2.1</title>
+                        <duracio>40:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Two years have elapsed. Freddie has succumbed to illness and at his funeral Thomas asks Ada to return home though she is scornful that he has been so successful with his mix of legal and illegal businesses. When his pub the Garrison is blown up he goes straight to the Black Lion to accuse his Irish rivals, who have a proposition for him involving murder. Returning home he informs the family that he plans to expand his bookies' business to London but John's wife Esme warns him of its dangers given the existing racial turf wars.</description>
+                        <data>11/12/2010</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>Episode #2.2</title>
+                        <duracio>42:00:00</duracio>
+                        <idioma>ES</idioma>
+                        <description>Campbell visits Thomas in hospital, aware that he killed Eamonn Duggan, a fact he intends to hold over him to use him as his spy. They both know that Grace has married and is in America.</description>
+                        <data>19/12/2010</data>
+                    </episodi>
+                </episodis>
+            </temporada>
+
+            <temporada>
+                <numeroTemporada>3</numeroTemporada>
+                <numeroEpisodis>2</numeroEpisodis>
+                <episodis>
+                    <episodi>
+                        <title>Episode #3.1</title>
+                        <duracio>40:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>It is Thomas Shelby's long-awaited wedding day.</description>
+                        <data>30/10/2011</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>Episode #3.2</title>
+                        <duracio>42:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Tommy discovers the extent of the mission given to him and the extreme lengths his new paymasters are willing to go to in their quest for power.</description>
+                        <data>06/11/2011</data>
+                    </episodi>
+                </episodis>
+            </temporada>
+        </temporades>
+    </Serie>
+
+    <Serie id="wdead">
+        <title>Walking Dead</title>
+        <description>Sheriff Deputy Rick Grimes leads a group of survivors in a world overrun by the walking dead. Fighting the dead, fearing the living.</description>
+        <artists>
+            <artist id="33" nom="F.Darabont" tipus="director" nacionalitat="EEUU"></artist>
+			<artist id="34" nom="A.Lincoln" tipus="actor" nacionalitat="UK"></artist>
+            <artist id="35" nom="N.Reedus" tipus="actor" nacionalitat="EEUU"></artist>           
+                       
+        </artists>
+        <productora id="1" name="AMC:Gran_Via_Productions"></productora>
+        <temporades>
+            <temporada>
+                <numeroTemporada>1</numeroTemporada>
+                <numeroEpisodis>3</numeroEpisodis>
+                <episodis>
+                    <episodi>
+                        <title>Episode #1.1</title>
+                        <duracio>50:00:00</duracio>
+                        <idioma>ES</idioma>
+                        <description>After being shot, Deputy Sheriff Rick Grimes awakes to find the world overrun by the undead.</description>
+                        <data>05/11/2010</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>Episode #1.2</title>
+                        <duracio>42:00:00</duracio>
+                        <idioma>ES</idioma>
+                        <description>Rick finds himself trapped with a group of survivors inside a department store that is surrounded by walkers.</description>
+                        <data>12/11/2011</data>
+                    </episodi>
+
+                    <episodi>
+                        <title>Episode #1.3</title>
+                        <duracio>45:00:00</duracio>
+                        <idioma>ES</idioma>
+                        <description>Rick is reunited with Lori and Carl but soon decides - along with some of the other survivors - to return to the rooftop and rescue Merle. Meanwhile, tensions run high between the other survivors at the camp.</description>
+                        <data>19/11/2010</data>
+                    </episodi>
+                </episodis>
+            </temporada>
+
+            <temporada>
+                <numeroTemporada>2</numeroTemporada>
+                <numeroEpisodis>3</numeroEpisodis>
+                <episodis>
+                    <episodi>
+                        <title>Episode #2.1</title>
+                        <duracio>40:00:00</duracio>
+                        <idioma>ES</idioma>
+                        <description>The group's plan to head for Fort Benning is put on hold when Sophia goes missing.</description>
+                        <data>17/10/2011</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>Episode #2.2</title>
+                        <duracio>42:00:00</duracio>
+                        <idioma>ES</idioma>
+                        <description>After Carl is accidentally shot, the group are brought to a family living on a nearby farm. Shane makes a dangerous trip in search of medical supplies.</description>
+                        <data>24/10/2011</data>
+                    </episodi>
+
+                    <episodi>
+                        <title>Episode #2.3</title>
+                        <duracio>42:00:00</duracio>
+                        <idioma>ES</idioma>
+                        <description>As Carl's condition continues to deteriorate, Shane and Otis try to dodge the walkers as they head back to the farm.</description>
+                        <data>31/10/2011</data>
+                    </episodi>
+                </episodis>
+            </temporada>
+
+            <temporada>
+                <numeroTemporada>3</numeroTemporada>
+                <numeroEpisodis>3</numeroEpisodis>
+                <episodis>
+                    <episodi>
+                        <title>Episode #3.1</title>
+                        <duracio>40:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>After months on the run, the group take refuge in a federal prison, while elsewhere, Andrea's health starts to deteriorate.</description>
+                        <data>15/10/2012</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>Episode #3.2</title>
+                        <duracio>42:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>As Hershel's condition worsens, Rick, Daryl and T-Dog deal with a group of prisoners.</description>
+                        <data>22/10/2012</data>
+                    </episodi>
+
+                    <episodi>
+                        <title>Episode #3.3</title>
+                        <duracio>42:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Andrea and Michonne are brought to a walled community run by a man called The Governor.</description>
+                        <data>29/10/2012</data>
+                    </episodi>
+                </episodis>
+            </temporada>
+
+
+            <temporada>
+                <numeroTemporada>4</numeroTemporada>
+                <numeroEpisodis>3</numeroEpisodis>
+                <episodis>
+                    <episodi>
+                        <title>Episode #4.1</title>
+                        <duracio>40:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Several months have passed and Rick and the expanded group are living a more peaceful life at the prison. Problems surface when Rick encounters a new survivor, and a supply run ends in disaster.</description>
+                        <data>13/10/2013</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>Episode #4.2</title>
+                        <duracio>42:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Rick is forced to abandon his quiet lifestyle when a mysterious virus puts the lives of everyone at the prison at risk.</description>
+                        <data>20/10/2013</data>
+                    </episodi>
+
+                    <episodi>
+                        <title>Episode #4.3</title>
+                        <duracio>42:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>As the sick are quarantined, Daryl, Tyreese, Michonne and Bob leave the prison in search of medical supplies. Rick makes a shocking discovery.</description>
+                        <data>27/10/2013</data>
+                    </episodi>
+                </episodis>
+            </temporada>
+
+            <temporada>
+                <numeroTemporada>5</numeroTemporada>
+                <numeroEpisodis>3</numeroEpisodis>
+                <episodis>
+                    <episodi>
+                        <title>Episode #5.1</title>
+                        <duracio>40:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Carol takes drastic action to rescue Rick and the group from the cannibals of Terminus as she and Tyreese reach the compound. Meanwhile, a familiar face makes a return.</description>
+                        <data>12/10/2014</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>Episode #5.2</title>
+                        <duracio>42:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Rick and the group cross paths with a mysterious priest and take shelter in his church, soon realizing that they're being hunted. Meanwhile, Daryl and Carol follow a lead to the whereabouts of Beth.</description>
+                        <data>19/10/2014</data>
+                    </episodi>
+
+                    <episodi>
+                        <title>Episode #5.3</title>
+                        <duracio>42:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>As Bob's life hangs in the balance, the group prepare to face off against the Hunters led by Gareth.</description>
+                        <data>26/10/2014</data>
+                    </episodi>
+                </episodis>
+            </temporada>
+
+            <temporada>
+                <numeroTemporada>6</numeroTemporada>
+                <numeroEpisodis>3</numeroEpisodis>
+                <episodis>
+                    <episodi>
+                        <title>Episode #6.1</title>
+                        <duracio>40:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Rick and the group devise a dangerous plan to lure a massive herd of walkers away from Alexandria, but a new development puts the entire community at risk.</description>
+                        <data>11/10/2015</data>
+                    </episodi>
+                    
+                    <episodi>
+                        <title>Episode #6.2</title>
+                        <duracio>42:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>While Rick and his group lure the herd away, Carol and Morgan lead a line of defense against the Wolves when Alexandria comes under attack.</description>
+                        <data>18/10/2015</data>
+                    </episodi>
+
+                    <episodi>
+                        <title>Episode #6.3</title>
+                        <duracio>42:00:00</duracio>
+                        <idioma>VOSE</idioma>
+                        <description>Daryl, Abraham and Sasha continue to lure half of the herd away. Meanwhile, Glenn and Michonne lead the Alexandrians back to the safe-zone, as Rick crosses paths with the remainder of the Wolves' forces.</description>
+                        <data>25/10/2015</data>
+                    </episodi>
+                </episodis>
+            </temporada>
+
+        </temporades>
+    </Serie>
+</Series>
+
+<!-- ADMINISTRADORS -->
+	<admins>
+		<admin id="a1">
+			<nom>Pierre Nodoyuna</nom>
+			<usuari>pierre</usuari>
+			<password>pierre</password>
+		</admin>
+		<admin id="a2">
+			<nom>John Snow</nom>
+			<usuari>john</usuari>
+			<password>john</password>
+		</admin>
+	</admins>
+	
+<!-- CLIENTS -->
+	<clients>
+		<client id="c1" vip="true">
+			<nom>Armando Jaleo</nom>
+			<dni>11111111A</dni>
+			<adreca>Madrigal 8, 00001, Barcelona</adreca>
+			<usuari>ajaleo</usuari>
+			<password>ajaleo</password>
+		</client>
+		<client id="c2" vip="false">
+			<nom>Lola Mento</nom>
+			<dni>22222222B</dni>
+			<adreca>Monumental 2, 00003, Barcelona</adreca>
+			<usuari>lmento</usuari>
+			<password>lmento</password>
+		</client>
+		<client id="c3" vip="false">
+			<nom>Leandro Gao</nom>
+			<dni>33333333C</dni>
+			<adreca>Uruguay 12, 00001, Barcelona</adreca>
+			<usuari>lgao</usuari>
+			<password>lgao</password>
+		</client>
+		<client id="c4" vip="true">
+			<nom>Esther Colero</nom>
+			<dni>44444444D</dni>
+			<adreca>Gran Via 222, 00007, Barcelona</adreca>
+			<usuari>ecolero</usuari>
+			<password>ecolero</password>
+		</client>
+		<client id="c5" vip="false">
+			<nom>Dolores Tomacal</nom>
+			<dni>55555555E</dni>
+			<adreca>Sta Eulalia 1, 00031, San Benet del Bages</adreca>
+			<usuari>dtomacal</usuari>
+			<password>dtomacal</password>
+		</client>
+		<client id="c6" vip="false">
+			<nom>Aitor Menta</nom>
+			<dni>66666666F</dni>
+			<adreca>Carretera de l'Esglesia 44, 10011, Llimiana</adreca>
+			<usuari>atormenta</usuari>
+			<password>atormenta</password>
+		</client>
+		<client id="z9" vip="false">
+			<nom>Misco Jones</nom>
+			<dni>21508741G</dni>
+			<adreca>13 Rue del Percebe</adreca>
+			<usuari>mcojones</usuari>
+			<password>singapur</password>
+		</client>
+		<client id="c92" vip="false">
+			<nom>Soila Cerda</nom>
+			<dni>00500014U</dni>
+			<adreca>Calle roja 93</adreca>
+			<usuari>toledo</usuari>
+			<password>rajoy</password>
+		</client>
+	</clients>
+
+<!-- VISUALITZACIONS -->	
+	<visualitzacio id="1" client="c1" serie="misfits" temporada="1" episodi="Episode #1.2" data="06.11.2018"/>
+	
+<!-- SUBSCRIPCIONS -->
+	<subscripcio id="1" client="c1" serie="misfits" temporada="1" episodi="Episode #1.1"/>
+	<subscripcio id="2" client="c1" serie="misfits" temporada="1" episodi="Episode #1.2"/>
+	
+<!-- VALORACIONS -->
+	<valoracio id="1" client="c1"  puntuacio="6" data="01.11.2018" serie="misfits" temporada="1" episodi="Episode #1.1"/>
+
+</STUB>
+	

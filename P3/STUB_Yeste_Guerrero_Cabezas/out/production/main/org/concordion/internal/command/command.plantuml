@@ -1,0 +1,277 @@
+@startuml
+
+title __COMMAND's Class Diagram__\n
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        class AssertEqualsCommand {
+            - listeners : List<AssertEqualsListener>
+            - comparator : Comparator<Object>
+            + AssertEqualsCommand()
+            + AssertEqualsCommand()
+            + addAssertEqualsListener()
+            + removeAssertEqualsListener()
+            + verify()
+            - announceSuccess()
+            - announceFailure()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        class AssertFalseCommand {
+            # processFalseResult()
+            # processTrueResult()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        class AssertTrueCommand {
+            # processFalseResult()
+            # processTrueResult()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        abstract class BooleanCommand {
+            - listeners : List<AssertListener>
+            + addAssertListener()
+            + removeAssertListener()
+            + verify()
+            # announceSuccess()
+            # announceFailure()
+            {abstract} # processTrueResult()
+            {abstract} # processFalseResult()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        class EchoCommand {
+            + verify()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        class ExampleCommand {
+            - listeners : List<ExampleListener>
+            + getExamples()
+            + addExampleListener()
+            + removeExampleListener()
+            + execute()
+            - getExampleName()
+            + modifyCommandCallTree()
+            # isBeforeExample()
+            {static} + setupCommandForExample()
+            + setSpecificationDescriber()
+            - announceBeforeExample()
+            - announceAfterExample()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        class LocalTextDecorator {
+            {static} - TEXT_VARIABLE : String
+            {static} - HREF_VARIABLE : String
+            + LocalTextDecorator()
+            # process()
+            - getHref()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        interface ResultAnnouncer {
+            {abstract} + announceException()
+            {abstract} + announce()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        class RunCommand {
+            - listeners : List<RunListener>
+            + addRunListener()
+            + removeRunListener()
+            + setRunStrategy()
+            + RunCommand()
+            + execute()
+            - announceRunStarted()
+            - updateHrefSuffix()
+            - newRunResultAnnouncer()
+            + setRunnerFactory()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        class SequentialRunStrategy {
+            + call()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        class SetCommand {
+            - listeners : List<SetListener>
+            + addSetListener()
+            + removeSetListener()
+            + setUp()
+            - announceSetCompleted()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        class SpecificationCommand {
+            - listeners : List<SpecificationProcessingListener>
+            - outerExampleListeners : List<OuterExampleListener>
+            + setUp()
+            + execute()
+            + getSpecificationDescription()
+            + start()
+            + finish()
+            + verify()
+            + addSpecificationListener()
+            + removeSpecificationListener()
+            + addOuterExampleListener()
+            + removeOuterExampleListener()
+            + setSpecificationDescriber()
+            - announceAfterProcessingEvent()
+            - announceBeforeProcessingEvent()
+            - announceBeforeOuterExampleEvent()
+            - announceAfterOuterExampleEvent()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        class ThrowableCatchingDecorator {
+            - listeners : List<ThrowableCaughtListener>
+            - failFastExceptions : List<Class<? extends Throwable>>
+            + addThrowableListener()
+            + removeThrowableListener()
+            + ThrowableCatchingDecorator()
+            - announceThrowableCaught()
+            # process()
+            - rethrowFailFastException()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        class ThrowableCaughtPublisher {
+            - listeners : List<ThrowableCaughtListener>
+            + addThrowableListener()
+            + removeThrowableListener()
+            + throwableCaught()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        class VerifyRowsCommand {
+            - listeners : List<VerifyRowsListener>
+            {static} - DEFAULT_STRATEGIES_PACKAGE : String
+            {static} - DEFAULT_STRATEGIES_SUFFIX : String
+            + addVerifyRowsListener()
+            + removeVerifyRowsListener()
+            + verify()
+            - newStrategyInstance()
+            - detectStrategyClass()
+            - findFirstExistingClass()
+        }
+      }
+    }
+  }
+  
+
+  AssertEqualsCommand -up-|> AbstractCommand
+  AssertFalseCommand -up-|> BooleanCommand
+  AssertTrueCommand -up-|> BooleanCommand
+  BooleanCommand -up-|> AbstractCommand
+  EchoCommand -up-|> AbstractCommand
+  ExampleCommand -up-|> AbstractCommand
+  ExampleCommand o-- SpecificationDescriber : specificationDescriber
+  LocalTextDecorator -up-|> AbstractCommandDecorator
+  RunCommand -up-|> AbstractCommand
+  RunCommand o-- RunStrategy : runStrategy
+  RunCommand o-- RunnerFactory : runnerFactory
+  SequentialRunStrategy -up-|> RunStrategy
+  SetCommand -up-|> AbstractCommand
+  SpecificationCommand -up-|> AbstractCommand
+  SpecificationCommand o-- SpecificationDescriber : specificationDescriber
+  ThrowableCatchingDecorator -up-|> AbstractCommandDecorator
+  ThrowableCaughtPublisher -up-|> ThrowableCaughtListener
+  VerifyRowsCommand -up-|> AbstractCommand
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

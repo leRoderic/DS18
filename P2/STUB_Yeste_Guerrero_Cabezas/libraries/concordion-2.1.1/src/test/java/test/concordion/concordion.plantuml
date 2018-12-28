@@ -1,0 +1,220 @@
+@startuml
+
+title __CONCORDION's Class Diagram__\n
+
+  package test.concordion {
+    class DummyFixture {
+    }
+  }
+  
+
+  package test.concordion {
+    class EventRecorder {
+        - events : List<Object>
+        + failureReported()
+        + successReported()
+        + throwableCaught()
+        + getLast()
+    }
+  }
+  
+
+  package test.concordion {
+    class FileOutputStreamer {
+        {static} - PROPERTY_OUTPUT_DIR : String
+        - baseOutputDir : File
+        - resourcesOutput : List<String>
+        + FileOutputStreamer()
+        + getOutputStream()
+        - createOutputStream()
+        + getFile()
+        - mkdirs()
+        + getBaseOutputDir()
+        + getResourcesOutput()
+    }
+  }
+  
+
+  package test.concordion {
+    class FilterSource {
+        - source : Source
+        - prefix : String
+        + FilterSource()
+        + createInputStream()
+        + canFind()
+        + readAsString()
+        + readResourceAsString()
+        - readAsString()
+        - getResourceAsStream()
+        - readAsString()
+        - readResourceAsString()
+    }
+  }
+  
+
+  package test.concordion {
+    class JavaSourceCompiler {
+        {static} - CLASS_NAME_PATTERN : Pattern
+        {static} - PACKAGE_NAME_PATTERN : Pattern
+        - compiler : JavaCompiler
+        + compile()
+        + compile()
+        + compileWithParent()
+        + compile()
+        - getClassName()
+        - getPackageName()
+    }
+  }
+  
+
+  package test.concordion {
+    interface OutputStreamer {
+        {abstract} + getOutputStream()
+    }
+  }
+  
+
+  package test.concordion {
+    class ProcessingResult {
+        - resultSummary : ResultSummary
+        - eventRecorder : EventRecorder
+        - documentXML : String
+        + ProcessingResult()
+        + getSuccessCount()
+        + getFailureCount()
+        + getExceptionCount()
+        + getLastAssertFailureEvent()
+        + getXOMDocument()
+        + getRootElement()
+        + getFooterText()
+        + getElementXML()
+        + getExceptionMessage()
+        + getStackTraceMessage()
+        - textOfElementWithClass()
+        + toXML()
+        + successOrFailureInWords()
+        + hasFailures()
+        + isSuccess()
+        - getOutputFragment()
+        + getOutputFragmentXML()
+        - getHeadElement()
+        + hasCSSDeclaration()
+        + hasEmbeddedCSS()
+        + hasLinkedCSS()
+        + getLinkedCSS()
+        + hasJavaScriptDeclaration()
+        + hasEmbeddedJavaScript()
+        + hasLinkedJavaScript()
+        + getLinkedJavaScript()
+        + hasJavaScriptFunction()
+        - readFile()
+        - combine()
+    }
+  }
+  
+
+  package test.concordion {
+    class RunCommandSimulator {
+        + simulate()
+        + createMap()
+    }
+  }
+  
+
+  package test.concordion {
+    class StubEvaluator {
+        - evaluationResult : Object
+        + createEvaluator()
+        + evaluate()
+        + getVariable()
+        + setVariable()
+        + withStubbedResult()
+    }
+  }
+  
+
+  package test.concordion {
+    class StubSource {
+        - resources : Map<Resource, String>
+        + addResource()
+        + addResource()
+        + createInputStream()
+        + canFind()
+        + toString()
+        + readAsString()
+        + readResourceAsString()
+    }
+  }
+  
+
+  package test.concordion {
+    class StubTarget {
+        - writtenStrings : LinkedHashMap<Resource, String>
+        - copiedResources : List<Resource>
+        - outputStreamer : OutputStreamer
+        + copyTo()
+        + delete()
+        + write()
+        + getWrittenString()
+        + exists()
+        + hasCopiedResource()
+        + getOutputStream()
+        + setOutputStreamer()
+        + getOutputStreamer()
+        + resolvedPathFor()
+        + getCopiedResources()
+    }
+  }
+  
+
+  package test.concordion {
+    class TestRig {
+        - fixture : Fixture
+        - evaluatorFactory : EvaluatorFactory
+        - stubSource : StubSource
+        - source : Source
+        - stubTarget : StubTarget
+        - fixtureExtensionLoader : FixtureExtensionLoader
+        - extension : ConcordionExtension
+        - namespaceDeclaration : String
+        + withFixture()
+        + withNamespaceDeclaration()
+        + processFragment()
+        + processFragment()
+        + processFragment()
+        + process()
+        + process()
+        + process()
+        - process()
+        - wrapFragment()
+        - wrapFragment()
+        - wrapWithNamespaceDeclaration()
+        + withStubbedEvaluationResult()
+        + withSourceFilter()
+        + withResource()
+        + hasCopiedResource()
+        + getCopiedResources()
+        + withExtension()
+        + withOutputStreamer()
+    }
+  }
+  
+
+  EventRecorder -up-|> AssertEqualsListener
+  EventRecorder -up-|> ThrowableCaughtListener
+  FileOutputStreamer -up-|> OutputStreamer
+  FilterSource -up-|> Source
+  StubEvaluator -up-|> Evaluator
+  StubEvaluator -up-|> EvaluatorFactory
+  StubSource -up-|> Source
+  StubTarget -up-|> Target
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

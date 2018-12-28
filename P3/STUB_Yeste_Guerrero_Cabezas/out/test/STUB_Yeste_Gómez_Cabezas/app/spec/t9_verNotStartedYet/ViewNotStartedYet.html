@@ -1,0 +1,57 @@
+<html xmlns:c="http://www.concordion.org/2007/concordion">
+<head>
+    <title>US9 - Visualización de la lista Non Started Yet</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>US9 - Visualización de la lista Non Started Yet</h1>
+<p>
+    <b>COMO</b> <span style="color:Blue;">[Usuario registrado y logeado]</span>
+    <b>QUIERO</b> <span style="color:Blue;">[Ver la lista Non Started Yet]</span>
+    <b>PARA</b> <span style="color:Blue;">[Ver que series que he visto tendrán nuevo contenido]</span>
+</p>
+<div c:example="viewNonStartedYetList">
+    <h3>T9.1 - Lista sin series </h3>
+    <p>La lista WatchedNext muestra las series vista incompletas, por tanto, cuando un usuario no haya empezado ninguna serie o haya terminado todas, mostraremos el mensaje como que no hay ninguna. Para ello
+        utilizaremos el usuario c1,c2 y c3 como prueba</p>
+    <p>Con los usuarios siguientes:</p>
+    <table >
+        <tr><th>Usuario</th><th>Id</th></tr>
+        <tr><td>Armando Jaleo</td><td>c1</td></tr>
+        <tr><td>Lola Mento</td><td>c2</td></tr>
+        <tr><td>Leandro Gao</td><td>c3</td></tr>
+    </table>
+
+    <p>Añadiendo estas series vistas a los usuarios:</p>
+    <table c:execute="addNonStarted(#id,#serie)">
+        <tr><th>Usuario</th><th c:set="#id">idUsuario</th><th c:set="#serie">IdSerie</th></tr>
+        <tr><td>Armando Jaleo</td><td>c1</td><td>bbad</td></tr>
+        <tr><td>Armando Jaleo</td><td>c1</td><td>sthings</td></tr>
+        <tr><td>Lola Mento</td><td>c2</td><td>bbad</td></tr>
+    </table>
+    <p>Sabremos si el Usuario tiene una WatchedList existente o no:</p>
+    <table c:execute="#valid = checkHasEmptyNonStartedYetList(#id)">
+        <tr><th>Usuario</th><th c:set="#id">idUsuario</th><th c:assertEquals="#valid">Resultado</th></tr>
+        <tr><td>Armando Jaleo</td><td>c1</td><td>Non Started Yet vacía</td></tr>
+        <tr><td>Lola Mento</td><td>c2</td><td>Non Started Yet vacía</td></tr>
+        <tr><td>Leandro Gao</td><td>c3</td><td>No existen series acabadas</td></tr>
+    </table>
+</div>
+<div c:example="nextEpisodeComing">
+    <h3>T9.2 - Nuevos episodios disponibles </h3>
+    <p>Añadiendo los episodios que estan por venir al usuario:</p>
+    <table c:execute="addComingEpisodes(#id,#tEpisode,#idSerie1,#nSeason,#idSerie2)">
+        <tr><th>Usuario</th><th c:set="#id">idUsuario</th><th c:set="#tEpisode">Titulo</th><th c:set="#idSerie1">idSerie</th><th c:set="#nSeason">Temporada</th><th c:set="#idSerie2">idSerie</th></tr>
+        <tr><td>Armando Jaleo</td><td>c1</td><td>The house of black and white</td><td>gofthrones</td><td>5</td><td>gofthrones</td></tr>
+        <tr><td>Lola Mento</td><td>c2</td><td>White Bear</td><td>bmirror</td><td>2</td><td>bmirror</td></tr>
+    </table>
+    <p>Sabremos si el Usuario tiene una WatchedList existente o no:</p>
+    <table c:execute="#valid = checkIfComingEpisode(#id)">
+        <tr><th>Usuario</th><th c:set="#id">idUsuario</th><th c:assertEquals="#valid">Resultado</th></tr>
+        <tr><td>Armando Jaleo</td><td>c1</td><td>Tendrá episodios disponibles próximamente</td></tr>
+        <tr><td>Lola Mento</td><td>c2</td><td>Tendrá episodios disponibles próximamente</td></tr>
+        <tr><td>Leandro Gao</td><td>c3</td><td>No saldrán episodios próximamente</td></tr>
+    </table>
+</div>
+</body>
+</html>

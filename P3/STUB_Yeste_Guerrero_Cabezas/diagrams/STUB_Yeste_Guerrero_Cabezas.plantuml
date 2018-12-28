@@ -1,0 +1,2234 @@
+@startuml
+
+title __STUB_YESTE_GUERRERO_CABEZAS's Class Diagram__\n
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        package org.concordion.internal.command.strategies {
+          abstract class AbstractChangingOrderRowsMatchStrategy {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      abstract class AbstractCommand {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      abstract class AbstractCommandDecorator {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        abstract class AbstractElementEvent {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      abstract class AbstractResultSummary {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        abstract class AbstractRunEvent {
+        }
+      }
+    }
+  }
+  
+
+  package app.model {
+    class Actor {
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface AfterExample {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface AfterSpecification {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface AfterSuite {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.util {
+        class Announcer {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        class AssertEqualsCommand {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        interface AssertEqualsListener {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class AssertFailureEvent {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        class AssertFalseCommand {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        interface AssertFalseListener {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        interface AssertListener {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.listener {
+        class AssertResultRenderer {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class AssertSuccessEvent {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        class AssertTrueCommand {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        interface AssertTrueListener {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.parser.support {
+        class Attribute {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface BeforeExample {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface BeforeSpecification {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface BeforeSuite {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        package org.concordion.internal.command.strategies {
+          class BestMatchStrategy {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        abstract class BooleanCommand {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class BooleanExpectationChecker {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.listener {
+        class BreadcrumbRenderer {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class BrowserStyleWhitespaceComparator {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.cache {
+        class CacheResultSummary {
+        }
+      }
+    }
+  }
+  
+
+  package app.model {
+    class Catalog {
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class CatchAllExpectationChecker {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class ChainOfExpectationCheckers {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.util {
+        class Check {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class ClassNameAndTypeBasedSpecificationLocator {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class ClassNameBasedSpecificationLocator {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class ClassPathSource {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface Command {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      class CommandCall {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      class CommandCallList {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface CommandFactory {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class CommandRegistry {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.cache {
+        class CompositeRunOutput {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.parser.support {
+        class ConciseExpressionParser {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    class Concordion {
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class ConcordionAssertionError {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class ConcordionBuildEvent {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        interface ConcordionBuildListener {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class ConcordionBuilder {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.extension {
+        interface ConcordionExtender {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.extension {
+        interface ConcordionExtension {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.extension {
+        interface ConcordionExtensionFactory {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.integration {
+      package org.concordion.integration.junit4 {
+        class ConcordionFrameworkMethod {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.parser.markdown {
+        class ConcordionHtmlSerializer {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.parser.markdown {
+        class ConcordionMarkdownException {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.option {
+        interface ConcordionOptions {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class ConcordionOptionsParser {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface ConcordionResources {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.cache {
+        class ConcordionRunOutput {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.integration {
+      package org.concordion.integration.junit4 {
+        class ConcordionRunner {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface ConcordionScoped {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.parser.support {
+        class ConcordionStatement {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.parser.support {
+        class ConcordionSyntaxException {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.integration {
+      package org.concordion.integration.junit3 {
+        abstract class ConcordionTestCase {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class ConfigurationException {
+      }
+    }
+  }
+  
+
+  package app.controller {
+    class Controller {
+    }
+  }
+  
+
+  package app.resources {
+    interface DAO_STUB {
+    }
+  }
+  
+
+  package app.resources {
+    class DAO_XML_STUB {
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.runner {
+        class DefaultConcordionRunner {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        package org.concordion.internal.command.strategies {
+          class DefaultMatchStrategy {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package app.model {
+    class Director {
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class DocumentParser {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        interface DocumentParsingListener {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.listener {
+        class DocumentStructureImprover {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        class EchoCommand {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      class Element {
+      }
+    }
+  }
+  
+
+  package app.model {
+    class Episode {
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface Evaluator {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface EvaluatorFactory {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        class ExampleCommand {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      class ExampleCommandCall {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class ExampleEvent {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        interface ExampleListener {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface ExampleName {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        package org.concordion.internal.command.executeCommand {
+          class ExecuteCommand {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        package org.concordion.internal.command.executeCommand {
+          package org.concordion.internal.command.executeCommand.modificationStrategies {
+            class ExecuteCommandListModification {
+            }
+          }
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        package org.concordion.internal.command.executeCommand {
+          package org.concordion.internal.command.executeCommand.modificationStrategies {
+            abstract class ExecuteCommandModification {
+            }
+          }
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        package org.concordion.internal.command.executeCommand {
+          package org.concordion.internal.command.executeCommand.modificationStrategies {
+            class ExecuteCommandTableModification {
+            }
+          }
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class ExecuteEvent {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        interface ExecuteListener {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      interface ExpectationChecker {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface ExpectedToFail {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface ExpectedToPass {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class ExpressionEvaluatedEvent {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      interface ExpressionValidator {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.extension {
+        interface Extension {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.extension {
+        class ExtensionChecker {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.extension {
+        class ExtensionInitialisationException {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.extension {
+        interface Extensions {
+        }
+      }
+    }
+  }
+  
+
+  package app.model {
+    class FacadeUser {
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface FailFast {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class FailFastException {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class FileTarget {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class FileTargetWithSuffix {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface Fixture {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface FixtureDeclarations {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.listener {
+        class FixtureExampleHook {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.extension {
+        class FixtureExtensionLoader {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class FixtureInstance {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class FixtureOptionsLoader {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class FixtureRunner {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class FixtureSpecificationMapper {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class FixtureType {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface FullOGNL {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      enum ImplementationStatus {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      enum ImplementationStatusChecker {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class InvalidExpressionException {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.integration {
+      package org.concordion.integration.junit3 {
+        class JUnit3FrameworkProvider {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.integration {
+      package org.concordion.integration.junit4 {
+        class JUnit4FrameworkProvider {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.listener {
+        class JavaScriptEmbedder {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.listener {
+        class JavaScriptLinker {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        package org.concordion.internal.command.strategies {
+          class KeyMatchStrategy {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.parser.markdown {
+        class LinkNode {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class ListEntry {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class ListSupport {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        class LocalTextDecorator {
+        }
+      }
+    }
+  }
+  
+
+  package app.view {
+    class LogInUser {
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.parser.markdown {
+        class MarkdownConverter {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.option {
+        enum MarkdownExtensions {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.parser.markdown {
+        class MarkdownParser {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.listener {
+        class MetadataCreator {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class MissingRowEvent {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class MultiPattern {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      class MultiValueResult {
+      }
+    }
+  }
+  
+
+  package app.model {
+    interface Observable {
+    }
+  }
+  
+
+  package app.model {
+    interface Observer {
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class OgnlEvaluator {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class OgnlEvaluatorFactory {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class OuterExampleEvent {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        interface OuterExampleListener {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.listener {
+        class PageFooterRenderer {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      interface ParameterSupplier {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class ParsingException {
+      }
+    }
+  }
+  
+
+  package app.model {
+    class Producer {
+    }
+  }
+  
+
+  package app.view {
+    class RateEpisode {
+    }
+  }
+  
+
+  package app.model {
+    class Rating {
+    }
+  }
+  
+
+  package app.view {
+    class RegisterUser {
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      class Resource {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class ResourceFinder {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.listener {
+        class ResourceReferenceRemover {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class ResourceToCopy {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      enum Result {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        interface ResultAnnouncer {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface ResultRecorder {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface ResultSummary {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class Row {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        package org.concordion.internal.command.strategies {
+          abstract class RowsMatchStrategy {
+          }
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        class RunCommand {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.parser.markdown {
+        class RunCommandLinkRenderer {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class RunFailureEvent {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class RunIgnoreEvent {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        interface RunListener {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      interface RunOutput {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.listener {
+        class RunResultRenderer {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.cache {
+        enum RunResultsCache {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class RunStartedEvent {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface RunStrategy {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class RunSuccessEvent {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface Runner {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface RunnerFactory {
+      }
+    }
+  }
+  
+
+  package app.model {
+    class SCharacter {
+    }
+  }
+  
+
+  package app.resources {
+    class STUBXMLParser {
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      enum Scope {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.scopedObjects {
+        interface ScopedField {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.scopedObjects {
+        class ScopedFieldImpl {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.scopedObjects {
+        class ScopedFieldStore {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.scopedObjects {
+        interface ScopedObject {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.scopedObjects {
+        enum ScopedObjectFactory {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      abstract class ScopedObjectHolder {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.scopedObjects {
+        class ScopedObjectImpl {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.scopedObjects {
+        class ScopedObjectRepository {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        class SequentialRunStrategy {
+        }
+      }
+    }
+  }
+  
+
+  package app.model {
+    class Series {
+    }
+  }
+  
+
+  package app.model {
+    class SeriesSeason {
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        class SetCommand {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class SetEvent {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        interface SetListener {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class SimpleEvaluator {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class SimpleEvaluatorFactory {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.util {
+        class SimpleFormatter {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class SingleParameterSupplier {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class SingleResultSummary {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface Source {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      enum SourceType {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface Specification {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface SpecificationByExample {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        class SpecificationCommand {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface SpecificationConverter {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      interface SpecificationDescriber {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.listener {
+        class SpecificationExporter {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface SpecificationLocator {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface SpecificationLocatorWithType {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class SpecificationProcessingEvent {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        interface SpecificationProcessingListener {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface SpecificationReader {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class SpecificationToSpecificationByExampleAdaptor {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class SpecificationType {
+      }
+    }
+  }
+  
+
+  package app.view {
+    class StUB {
+    }
+  }
+  
+
+  package app.view {
+    class StUBLauncher {
+    }
+  }
+  
+
+  package app.model {
+    interface Staff {
+    }
+  }
+  
+
+  package app.model {
+    class StaffFactory {
+    }
+  }
+  
+
+  package app.model {
+    interface Strategy {
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.listener {
+        class StylesheetEmbedder {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.listener {
+        class StylesheetLinker {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class SummarizingResultRecorder {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class SurplusRowEvent {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class SystemPropertiesRunnerFactory {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class Table {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class TableSupport {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface Target {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.integration {
+      interface TestFrameworkProvider {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        class ThrowableCatchingDecorator {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class ThrowableCaughtEvent {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        interface ThrowableCaughtListener {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        class ThrowableCaughtPublisher {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.listener {
+        class ThrowableRenderer {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class UnableToBuildConcordionException {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      interface Unimplemented {
+      }
+    }
+  }
+  
+
+  package app.model {
+    class UpdateCatalogStrategy {
+    }
+  }
+  
+
+  package app.model {
+    class UpdateEpisodeStrategy {
+    }
+  }
+  
+
+  package app.model {
+    class UpdateSeasonStrategy {
+    }
+  }
+  
+
+  package app.model {
+    class User {
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.command {
+        class VerifyRowsCommand {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        interface VerifyRowsListener {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.listener {
+        class VerifyRowsResultRenderer {
+        }
+      }
+    }
+  }
+  
+
+  package app.view {
+    class ViewEpisode {
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class XMLParser {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class XMLSpecification {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class XMLSpecificationReader {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      package org.concordion.internal.parser.markdown {
+        class XhtmlConverter {
+        }
+      }
+    }
+  }
+  
+
+  AbstractCommand -up-|> Command
+  AbstractCommandDecorator -up-|> Command
+  AbstractResultSummary -up-|> ResultSummary
+  Actor -up-|> Staff
+  Announcer o-- T : proxy
+  AssertResultRenderer -up-|> AssertEqualsListener
+  AssertResultRenderer -up-|> AssertTrueListener
+  AssertResultRenderer -up-|> AssertFalseListener
+  BooleanExpectationChecker -up-|> ExpectationChecker
+  BreadcrumbRenderer -up-|> SpecificationProcessingListener
+  BrowserStyleWhitespaceComparator -up-|> Comparator
+  CatchAllExpectationChecker -up-|> ExpectationChecker
+  ChainOfExpectationCheckers -up-|> ExpectationChecker
+  ClassNameAndTypeBasedSpecificationLocator -up-|> SpecificationLocatorWithType
+  ClassNameBasedSpecificationLocator -up-|> SpecificationLocator
+  ClassPathSource -up-|> Source
+  CommandCall o-- CommandCall : parent
+  CommandRegistry -up-|> CommandFactory
+  CompositeRunOutput -up-|> RunOutput
+  ConcordionBuilder -up-|> ConcordionExtender
+  ConcordionFrameworkMethod o-- ConcordionRunnerInterface : runner
+  ConcordionRunOutput -up-|> RunOutput
+  Controller -up-|> Observer
+  Controller o-- Catalog : catalog
+  DAO_XML_STUB -up-|> DAO_STUB
+  DAO_XML_STUB o-- Catalog : catalog
+  DAO_XML_STUB o-- Series : sSerie
+  DAO_XML_STUB o-- User : user
+  DefaultConcordionRunner -up-|> Runner
+  Director -up-|> Staff
+  DocumentStructureImprover -up-|> DocumentParsingListener
+  FacadeUser o-- User : user
+  FileTarget -up-|> Target
+  FileTargetWithSuffix -up-|> Target
+  FixtureExampleHook -up-|> OuterExampleListener
+  FixtureExampleHook -up-|> ExampleListener
+  FixtureInstance -up-|> Fixture
+  FixtureInstance -up-|> FixtureDeclarations
+  FixtureType -up-|> FixtureDeclarations
+  JUnit3FrameworkProvider -up-|> TestFrameworkProvider
+  JUnit4FrameworkProvider -up-|> TestFrameworkProvider
+  JavaScriptEmbedder -up-|> DocumentParsingListener
+  JavaScriptLinker -up-|> DocumentParsingListener
+  JavaScriptLinker -up-|> SpecificationProcessingListener
+  LogInUser -up-|> JFrame
+  LogInUser o-- Controller : controller
+  MarkdownConverter -up-|> SpecificationConverter
+  MetadataCreator -up-|> DocumentParsingListener
+  OgnlEvaluator -up-|> Evaluator
+  OgnlEvaluatorFactory -up-|> EvaluatorFactory
+  PageFooterRenderer -up-|> SpecificationProcessingListener
+  Producer -up-|> Staff
+  RateEpisode -up-|> JFrame
+  RateEpisode o-- ViewEpisode : parent
+  RateEpisode o-- Controller : controller
+  RateEpisode o-- Episode : episode
+  Rating o-- Emotion : emotion
+  Rating o-- SCharacter : fCharacter
+  Rating o-- User : user
+  RegisterUser -up-|> JFrame
+  RegisterUser o-- Controller : controller
+  RegisterUser o-- LogInUser : parent
+  ResourceReferenceRemover -up-|> DocumentParsingListener
+  RunResultRenderer -up-|> RunListener
+  SCharacter o-- Actor : actor
+  STUBXMLParser o-- DAO_XML_STUB : daoXml
+  ScopedFieldImpl -up-|> ScopedField
+  ScopedObjectHolder o-- T : value
+  ScopedObjectImpl -up-|> ScopedObject
+  SequentialRunStrategy -up-|> RunStrategy
+  Series o-- Producer : producer
+  Series o-- Director : director
+  SeriesSeason o-- Series : series
+  SimpleEvaluatorFactory -up-|> EvaluatorFactory
+  SingleParameterSupplier -up-|> ParameterSupplier
+  SingleResultSummary -up-|> ResultSummary
+  SpecificationExporter -up-|> SpecificationProcessingListener
+  SpecificationExporter -up-|> SpecificationDescriber
+  SpecificationToSpecificationByExampleAdaptor -up-|> SpecificationByExample
+  StUB -up-|> JFrame
+  StUB o-- Controller : controller
+  StUB o-- User : user
+  StUB o-- LogInUser : parent
+  StylesheetEmbedder -up-|> DocumentParsingListener
+  StylesheetLinker -up-|> DocumentParsingListener
+  StylesheetLinker -up-|> SpecificationProcessingListener
+  SummarizingResultRecorder -up-|> ResultRecorder
+  SummarizingResultRecorder -up-|> ResultSummary
+  SystemPropertiesRunnerFactory -up-|> RunnerFactory
+  ThrowableCaughtPublisher -up-|> ThrowableCaughtListener
+  ThrowableRenderer -up-|> ThrowableCaughtListener
+  UpdateCatalogStrategy -up-|> Strategy
+  UpdateEpisodeStrategy -up-|> Strategy
+  UpdateSeasonStrategy -up-|> Strategy
+  User -up-|> Observable
+  VerifyRowsResultRenderer -up-|> VerifyRowsListener
+  ViewEpisode -up-|> JFrame
+  ViewEpisode o-- Controller : controller
+  ViewEpisode o-- StUB : parent
+  ViewEpisode o-- Episode : episode
+  ViewEpisode o-- User : user
+  XMLSpecification -up-|> SpecificationByExample
+  XMLSpecificationReader -up-|> SpecificationReader
+  XhtmlConverter -up-|> SpecificationConverter
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

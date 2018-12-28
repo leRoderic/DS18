@@ -1,0 +1,69 @@
+<html xmlns:c="http://www.concordion.org/2007/concordion">
+<head>
+    <title>US6 - Valorar episodio</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>US6 - Valorar Episodio</h1>
+<p>
+    <b>COMO</b> <font color="blue">[Usuario registrado y logeado]</font>
+    <b>QUIERO</b> <font color="blue">[Valorar un episodio]</font>
+    <b>PARA</b> <font color="blue">[Expresar mi opinión sobre el episodio]</font>
+</p>
+<div c:example="RateVoidEpisode">
+    <h3>T6.1 - Valorar un episodio que no existe </h3>
+    <p>Los usuarios solamente pueden valorar episodios existentes, en caso contrario se les notifica el error.</p>
+    <p>Dados los usuarios siguientes, que ven estos episodios:</p>
+    <table c:execute="playEpisode(#episode, #idSerie, #numTemporada, #idUser)">
+        <tr><th c:set="#idUser">Usuario</th><th c:set="#idSerie">IDSerie</th><th c:set="#numTemporada">Temporada</th><th c:set="#episode">Episodio</th></tr>
+        <tr><td>c1</td><td>gofthrones</td><td>2</td><td>The north remembers</td></tr>
+        <tr><td>c1</td><td>mrobot</td><td>1</td><td>eps1.0_hellofriend.mov</td></tr>
+    </table>
+    <p>Al intentar valroar, se obtienen los siguientes resultados:</p>
+    <table c:execute="#valid=canBeRated(#episode, #idSerie, #numTemporada, #id, #point)">
+        <tr><th c:set="#id">Usuario</th><th c:set="#idSerie">IDSerie</th><th c:set="#numTemporada">Temporada</th><th c:set="#episode">Episodio</th><th c:set="#point">Puntuación</th><th c:assert-equals="#valid">Resultado</th></tr>
+        <tr><td>c1</td><td>wdead</td><td>1</td><td>Episode #1.1</td><td>1</td><td>Episodio valorable</td></tr>
+        <tr><td>c1</td><td>gofthrones</td><td>2</td><td>The north remembers</td><td>6</td><td>Episodio valorable</td></tr>
+        <tr><td>c1</td><td>mrobot</td><td>1</td><td>eps1.0_hellofriend.mov</td><td>3</td><td>Episodio valorable</td></tr>
+        <tr><td>c1</td><td>mrobot</td><td>1</td><td>eps1.0_byefriends.mov</td><td>50</td><td>Episodio no valorable</td></tr>
+    </table>
+</div>
+<div c:example="RateWatchedEpisode">
+    <h3>T6.2 - Valorar un episodio visto </h3>
+    <p>Los usuarios solamente pueden valorar la emoción de aquellos episodios que hayan visto, por lo que no se hará la valoración en los no vistos.</p>
+    <p>Dados los usuarios siguientes, que ven estos episodios:</p>
+    <table c:execute="playEpisode(#episode, #idSerie, #numTemporada, #idUser)">
+        <tr><th c:set="#idUser">Usuario</th><th c:set="#idSerie">IDSerie</th><th c:set="#numTemporada">Temporada</th><th c:set="#episode">Episodio</th></tr>
+        <tr><td>c1</td><td>wdead</td><td>1</td><td>Episode #1.3</td></tr>
+        <tr><td>c1</td><td>sthings</td><td>1</td><td>Chapter Four: The Body</td></tr>
+        <tr><td>c1</td><td>bmirror</td><td>2</td><td>White Bear</td></tr>
+    </table>
+    <p>Si intentan hacer estas valoraciones, los resultados son:</p>
+    <table c:execute="#valid=rateEpisode(#id, #idSerie, #numTemporada, #episode, #point)">
+        <tr><th c:set="#id">Usuario</th><th c:set="#idSerie">IDSerie</th><th c:set="#numTemporada">Temporada</th><th c:set="#episode">Episodio</th><th c:set="#point">Puntuación</th><th c:assert-equals="#valid">Valoración guardada</th></tr>
+        <tr><td>c1</td><td>wdead</td><td>1</td><td>Episode #1.3</td><td>5</td><td>Funny</td></tr>
+        <tr><td>c2</td><td>sthings</td><td>1</td><td>Chapter Four: The Body</td><td>4</td><td>No se puede hacer la valoración</td></tr>
+        <tr><td>c1</td><td>bmirror</td><td>2</td><td>White Bear</td><td>2</td><td>Meh</td></tr>
+        <tr><td>c2</td><td>sofanarchy</td><td>1</td><td>Seeds</td><td>3</td><td>No se puede hacer la valoración</td></tr>
+        <tr><td>c3</td><td>sofanarchy</td><td>1</td><td>Seeds</td><td>3</td><td>No se puede hacer la valoración</td></tr>
+    </table>
+</div>
+<div c:example="WrongRate">
+    <h3>T6.3 - Valorar un episodio con una puntuación no permitida </h3>
+    <p>Los usuarios solamente pueden valorar la emoción de los episodios en un rango del 1 al 6. </p>
+    <p>Dados los usuarios siguientes, que ven estos episodios:</p>
+    <table c:execute="playEpisode(#episode, #idSerie, #numTemporada, #idUser)">
+        <tr><th c:set="#idUser">Usuario</th><th c:set="#idSerie">IDSerie</th><th c:set="#numTemporada">Temporada</th><th c:set="#episode">Episodio</th></tr>
+        <tr><td>c2</td><td>wdead</td><td>3</td><td>Episode #3.1</td></tr>
+        <tr><td>c2</td><td>gofthrones</td><td>4</td><td>The lion and the rose</td></tr>
+    </table>
+    <p>Si los usuarios intentan hacer estas valoraciones, estos son los resultados:</p>
+    <table c:execute="#valid=rateEpisode(#id, #idSerie, #numTemporada, #episode, #point)">
+        <tr><th c:set="#id">Usuario</th><th c:set="#idSerie">IDSerie</th><th c:set="#numTemporada">Temporada</th><th c:set="#episode">Episodio</th><th c:set="#point">Puntuación</th><th c:assert-equals="#valid">Valoración guardada</th></tr>
+        <tr><td>c2</td><td>wdead</td><td>3</td><td>Episode #3.1</td><td>4</td><td>Good</td></tr>
+        <tr><td>c2</td><td>wdead</td><td>3</td><td>Episode #3.2</td><td>0</td><td>No se puede hacer la valoración</td></tr>
+        <tr><td>c2</td><td>gofthrones</td><td>4</td><td>The lion and the rose</td><td>10</td><td>Error</td></tr>
+    </table>
+</div>
+</body>
+</html>

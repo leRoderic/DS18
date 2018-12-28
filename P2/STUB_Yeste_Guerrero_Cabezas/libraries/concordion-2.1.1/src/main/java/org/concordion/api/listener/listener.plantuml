@@ -1,0 +1,418 @@
+@startuml
+
+title __LISTENER's Class Diagram__\n
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        abstract class AbstractElementEvent {
+            - element : Element
+            + AbstractElementEvent()
+            + getElement()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        abstract class AbstractRunEvent {
+            - resultSummary : ResultSummary
+            - element : Element
+            + AbstractRunEvent()
+            + AbstractRunEvent()
+            + getResultSummary()
+            + getElement()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        interface AssertEqualsListener {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class AssertFailureEvent {
+            # expected : String
+            # actual : Object
+            + AssertFailureEvent()
+            + getExpected()
+            + getActual()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        interface AssertFalseListener {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        interface AssertListener {
+            {abstract} + successReported()
+            {abstract} + failureReported()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class AssertSuccessEvent {
+            + AssertSuccessEvent()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        interface AssertTrueListener {
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class ConcordionBuildEvent {
+            - target : Target
+            + ConcordionBuildEvent()
+            + getTarget()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        interface ConcordionBuildListener {
+            {abstract} + concordionBuilt()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        interface DocumentParsingListener {
+            {abstract} + beforeParsing()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class ExampleEvent {
+            - element : Element
+            - resultSummary : ResultSummary
+            - exampleName : String
+            + ExampleEvent()
+            + getElement()
+            + getResultSummary()
+            + getExampleName()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        interface ExampleListener {
+            {abstract} + beforeExample()
+            {abstract} + afterExample()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class ExecuteEvent {
+            + ExecuteEvent()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        interface ExecuteListener {
+            {abstract} + executeCompleted()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class ExpressionEvaluatedEvent {
+            + ExpressionEvaluatedEvent()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class MissingRowEvent {
+            - rowElement : Element
+            + MissingRowEvent()
+            + getRowElement()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class OuterExampleEvent {
+            - element : Element
+            - resultSummary : ResultSummary
+            - exampleName : String
+            + OuterExampleEvent()
+            + getElement()
+            + getResultSummary()
+            + getExampleName()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        interface OuterExampleListener {
+            {abstract} + beforeOuterExample()
+            {abstract} + afterOuterExample()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class RunFailureEvent {
+            + RunFailureEvent()
+            + RunFailureEvent()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class RunIgnoreEvent {
+            + RunIgnoreEvent()
+            + RunIgnoreEvent()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        interface RunListener {
+            {abstract} + runStarted()
+            {abstract} + successReported()
+            {abstract} + failureReported()
+            {abstract} + ignoredReported()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class RunStartedEvent {
+            - element : Element
+            - href : String
+            + RunStartedEvent()
+            + getElement()
+            + getHref()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class RunSuccessEvent {
+            + RunSuccessEvent()
+            + RunSuccessEvent()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class SetEvent {
+            - expression : String
+            + SetEvent()
+            + getExpression()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        interface SetListener {
+            {abstract} + setCompleted()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class SpecificationProcessingEvent {
+            - rootElement : Element
+            - resource : Resource
+            + SpecificationProcessingEvent()
+            + getRootElement()
+            + getResource()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        interface SpecificationProcessingListener {
+            {abstract} + beforeProcessingSpecification()
+            {abstract} + afterProcessingSpecification()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class SurplusRowEvent {
+            - rowElement : Element
+            + SurplusRowEvent()
+            + getRowElement()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        class ThrowableCaughtEvent {
+            - throwable : Throwable
+            - expression : String
+            + ThrowableCaughtEvent()
+            + getThrowable()
+            + getExpression()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        interface ThrowableCaughtListener {
+            {abstract} + throwableCaught()
+        }
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.api {
+      package org.concordion.api.listener {
+        interface VerifyRowsListener {
+            {abstract} + expressionEvaluated()
+            {abstract} + missingRow()
+            {abstract} + surplusRow()
+        }
+      }
+    }
+  }
+  
+
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

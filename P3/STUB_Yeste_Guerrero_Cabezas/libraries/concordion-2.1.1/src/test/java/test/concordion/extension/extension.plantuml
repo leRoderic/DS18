@@ -1,0 +1,281 @@
+@startuml
+
+title __EXTENSION's Class Diagram__\n
+
+  package test.concordion {
+    package test.concordion.extension {
+      class AssertLogger {
+          - stream : PrintStream
+          + setStream()
+          + successReported()
+          + failureReported()
+      }
+    }
+  }
+  
+
+  package test.concordion {
+    package test.concordion.extension {
+      class CSSEmbeddedExtension {
+          + addTo()
+      }
+    }
+  }
+  
+
+  package test.concordion {
+    package test.concordion.extension {
+      class CSSLinkedExtension {
+          + addTo()
+      }
+    }
+  }
+  
+
+  package test.concordion {
+    package test.concordion.extension {
+      class CommandExtension {
+          - stream : PrintStream
+          + withStream()
+          + addTo()
+      }
+    }
+  }
+  
+
+  package test.concordion {
+    package test.concordion.extension {
+      class ConcordionBuildLogger {
+          - stream : PrintStream
+          + setStream()
+          + concordionBuilt()
+      }
+    }
+  }
+  
+
+  package test.concordion {
+    package test.concordion.extension {
+      class DocumentParsingLogger {
+          - stream : PrintStream
+          + setStream()
+          + beforeParsing()
+      }
+    }
+  }
+  
+
+  package test.concordion {
+    package test.concordion.extension {
+      class DynamicResourceExtension {
+          {static} + SOURCE_PATH : String
+          - target : Target
+          + addTo()
+          + concordionBuilt()
+          - createResourceInTarget()
+      }
+    }
+  }
+  
+
+  package test.concordion {
+    package test.concordion.extension {
+      class ExampleEventTestExtension {
+          - name : String
+          - log : List<String>
+          + addTo()
+          + withLog()
+          - log()
+          + beforeProcessingSpecification()
+          + afterProcessingSpecification()
+          + beforeOuterExample()
+          + afterOuterExample()
+          + beforeExample()
+          + afterExample()
+      }
+    }
+  }
+  
+
+  package test.concordion {
+    package test.concordion.extension {
+      class ExampleLogger {
+          - stream : PrintStream
+          + setStream()
+          + beforeExample()
+          + afterExample()
+      }
+    }
+  }
+  
+
+  package test.concordion {
+    package test.concordion.extension {
+      class ExampleProcessingExtension {
+          + addTo()
+          + withStream()
+      }
+    }
+  }
+  
+
+  package test.concordion {
+    package test.concordion.extension {
+      class ExampleTestExtension {
+          - stream : PrintStream
+          + addTo()
+          + withStream()
+          + beforeExample()
+          + afterExample()
+      }
+    }
+  }
+  
+
+  package test.concordion {
+    package test.concordion.extension {
+      class ExecuteLogger {
+          - stream : PrintStream
+          + setStream()
+          + executeCompleted()
+      }
+    }
+  }
+  
+
+  package test.concordion {
+    package test.concordion.extension {
+      class JavaScriptEmbeddedExtension {
+          + addTo()
+      }
+    }
+  }
+  
+
+  package test.concordion {
+    package test.concordion.extension {
+      class JavaScriptLinkedExtension {
+          + addTo()
+      }
+    }
+  }
+  
+
+  package test.concordion {
+    package test.concordion.extension {
+      class LoggingExtension {
+          + addTo()
+          + withStream()
+      }
+    }
+  }
+  
+
+  package test.concordion {
+    package test.concordion.extension {
+      class ProcessingExtension {
+          + addTo()
+          + withStream()
+      }
+    }
+  }
+  
+
+  package test.concordion {
+    package test.concordion.extension {
+      class ResourceExtension {
+          {static} + SOURCE_PATH : String
+          + addTo()
+          - at()
+      }
+    }
+  }
+  
+
+  package test.concordion {
+    package test.concordion.extension {
+      class SetLogger {
+          - stream : PrintStream
+          + setStream()
+          + setCompleted()
+          - getTargetExpression()
+      }
+    }
+  }
+  
+
+  package test.concordion {
+    package test.concordion.extension {
+      class SpecificationProcessingLogger {
+          - stream : PrintStream
+          + setStream()
+          + beforeProcessingSpecification()
+          + afterProcessingSpecification()
+      }
+    }
+  }
+  
+
+  package test.concordion {
+    package test.concordion.extension {
+      class VerifyRowsLogger {
+          - stream : PrintStream
+          + setStream()
+          + expressionEvaluated()
+          + missingRow()
+          + surplusRow()
+      }
+    }
+  }
+  
+
+  AssertLogger -up-|> AssertEqualsListener
+  AssertLogger -up-|> AssertTrueListener
+  AssertLogger -up-|> AssertFalseListener
+  CSSEmbeddedExtension -up-|> ConcordionExtension
+  CSSLinkedExtension -up-|> ConcordionExtension
+  CommandExtension -up-|> ConcordionExtension
+  ConcordionBuildLogger -up-|> ConcordionBuildListener
+  DocumentParsingLogger -up-|> DocumentParsingListener
+  DynamicResourceExtension -up-|> ConcordionExtension
+  DynamicResourceExtension -up-|> ConcordionBuildListener
+  ExampleEventTestExtension -up-|> ConcordionExtension
+  ExampleEventTestExtension -up-|> SpecificationProcessingListener
+  ExampleEventTestExtension -up-|> OuterExampleListener
+  ExampleEventTestExtension -up-|> ExampleListener
+  ExampleLogger -up-|> ExampleListener
+  ExampleProcessingExtension -up-|> ConcordionExtension
+  ExampleProcessingExtension o-- AssertLogger : assertLogger
+  ExampleProcessingExtension o-- ConcordionBuildLogger : concordionBuildLogger
+  ExampleProcessingExtension o-- SpecificationProcessingLogger : specificationProcessingLogger
+  ExampleProcessingExtension o-- DocumentParsingLogger : documentParsingLogger
+  ExampleProcessingExtension o-- ExampleLogger : exampleLogger
+  ExampleTestExtension -up-|> ConcordionExtension
+  ExampleTestExtension -up-|> ExampleListener
+  ExecuteLogger -up-|> ExecuteListener
+  JavaScriptEmbeddedExtension -up-|> ConcordionExtension
+  JavaScriptLinkedExtension -up-|> ConcordionExtension
+  LoggingExtension -up-|> ConcordionExtension
+  LoggingExtension o-- AssertLogger : assertLogger
+  LoggingExtension o-- ExecuteLogger : executeLogger
+  LoggingExtension o-- SetLogger : setLogger
+  LoggingExtension o-- VerifyRowsLogger : verifyRowsLogger
+  ProcessingExtension -up-|> ConcordionExtension
+  ProcessingExtension o-- AssertLogger : assertLogger
+  ProcessingExtension o-- ConcordionBuildLogger : concordionBuildLogger
+  ProcessingExtension o-- SpecificationProcessingLogger : specificationProcessingLogger
+  ProcessingExtension o-- DocumentParsingLogger : documentParsingLogger
+  ResourceExtension -up-|> ConcordionExtension
+  SetLogger -up-|> SetListener
+  SpecificationProcessingLogger -up-|> SpecificationProcessingListener
+  VerifyRowsLogger -up-|> VerifyRowsListener
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

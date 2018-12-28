@@ -1,0 +1,894 @@
+@startuml
+
+title __INTERNAL's Class Diagram__\n
+
+  package org.concordion {
+    package org.concordion.internal {
+      abstract class AbstractResultSummary {
+          - specificationDescription : String
+          + isForExample()
+          + print()
+          + print()
+          ~ printToString()
+          + printCountsToString()
+          + printCountsToString()
+          + setSpecificationDescription()
+          + getSpecificationDescription()
+          + getImplementationStatus()
+          + setImplementationStatus()
+          + getImplementationStatusChecker()
+          + assertIsSatisfied()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class BooleanExpectationChecker {
+          + isAcceptable()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class BrowserStyleWhitespaceComparator {
+          + BrowserStyleWhitespaceComparator()
+          + compare()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class CatchAllExpectationChecker {
+          + isAcceptable()
+          {static} + normalize()
+          {static} - convertObjectToString()
+          {static} - replaceMultipleWhitespaceWithOneSpace()
+          {static} - processLineContinuations()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class ChainOfExpectationCheckers {
+          - checkers : List<ExpectationChecker>
+          + add()
+          + isAcceptable()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class ClassNameAndTypeBasedSpecificationLocator {
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class ClassNameBasedSpecificationLocator {
+          - specificationSuffix : String
+          + ClassNameBasedSpecificationLocator()
+          + ClassNameBasedSpecificationLocator()
+          + locateSpecification()
+          + locateSpecification()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class ClassPathSource {
+          + createInputStream()
+          + canFind()
+          + toString()
+          + readAsString()
+          + readResourceAsString()
+          - readAsString()
+          - getResourceAsStream()
+          - readAsString()
+          - readResourceAsString()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class CommandRegistry {
+          - commandMap : Map<Object, Command>
+          + register()
+          + createCommand()
+          - makeKey()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class ConcordionAssertionError {
+          {static} - serialVersionUID : long
+          + ConcordionAssertionError()
+          + getResultSummary()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class ConcordionBuilder {
+          - listeners : List<ConcordionBuildListener>
+          {static} + NAMESPACE_CONCORDION_2007 : String
+          {static} - PROPERTY_OUTPUT_DIR : String
+          {static} - PROPERTY_EXTENSIONS : String
+          {static} - EMBEDDED_STYLESHEET_RESOURCE : String
+          {static} - baseOutputDir : File
+          - sources : Map<SourceType, Source>
+          - resourceToCopyMap : LinkedHashMap<String, Resource>
+          - specificationProcessingListeners : List<SpecificationProcessingListener>
+          - throwableCaughtListeners : List<ThrowableCaughtListener>
+          - failFastExceptions : List<Class<? extends Throwable>>
+          - builtAlready : boolean
+          - specificationTypes : List<SpecificationType>
+          - specificationConverters : Set<SpecificationConverter>
+          + withSource()
+          + withSource()
+          + withTarget()
+          + withPageFooterRenderer()
+          + withBreadcrumbRenderer()
+          + withRunnerFactory()
+          + withSpecificationLocator()
+          + withEvaluatorFactory()
+          + withThrowableListener()
+          - withThrowableListener()
+          + withAssertEqualsListener()
+          + withAssertTrueListener()
+          + withAssertFalseListener()
+          + withVerifyRowsListener()
+          + withRunListener()
+          + withRunStrategy()
+          + withExecuteListener()
+          + withSetListener()
+          + withDocumentParsingListener()
+          + withSpecificationProcessingListener()
+          + withBuildListener()
+          - withApprovedCommand()
+          + withCommand()
+          + withResource()
+          + withEmbeddedCSS()
+          + withEmbeddedCSS()
+          + withLinkedCSS()
+          + withEmbeddedJavaScript()
+          + withLinkedJavaScript()
+          + build()
+          - announceBuildCompleted()
+          - addSpecificationListeners()
+          - addThrowableListeners()
+          - copyResources()
+          - addExtensions()
+          - addExtension()
+          {static} + getBaseOutputDir()
+          + withFailFast()
+          + withFixture()
+          + withExampleListener()
+          + withOuterExampleListener()
+          + withResources()
+          - addDefaultStyling()
+          + withSpecificationType()
+          ~ configureWith()
+          - expandSystemProperties()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class ConcordionOptionsParser {
+          {static} + convertNamespacePairsToMap()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class ConfigurationException {
+          {static} - serialVersionUID : long
+          + ConfigurationException()
+          + ConfigurationException()
+          + ConfigurationException()
+          + ConfigurationException()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class DocumentParser {
+          - listeners : List<DocumentParsingListener>
+          + DocumentParser()
+          + addDocumentParsingListener()
+          + removeDocumentParsingListener()
+          - announceBeforeParsing()
+          + parse()
+          - modifyCommandCallTree()
+          - generateCommandCallTree()
+          - createSpecificationCommand()
+          - createCommand()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      interface ExpectationChecker {
+          {abstract} + isAcceptable()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      interface ExpressionValidator {
+          {abstract} + validate()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class FailFastException {
+          {static} - serialVersionUID : long
+          + FailFastException()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class FileTarget {
+          {static} - FRESH_ENOUGH_MILLIS : long
+          {static} - BUFFER_SIZE : int
+          - baseDir : File
+          + FileTarget()
+          + copyTo()
+          + delete()
+          + write()
+          + getFile()
+          + getOutputStream()
+          - createOutputStream()
+          - mkdirs()
+          - isFreshEnough()
+          + exists()
+          + resolvedPathFor()
+          - copy()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class FileTargetWithSuffix {
+          {static} - PROPERTY_OUTPUT_DIR : String
+          - suffix : String
+          + FileTargetWithSuffix()
+          - getBaseOutputDir()
+          + write()
+          + copyTo()
+          + getOutputStream()
+          + delete()
+          + exists()
+          + resolvedPathFor()
+          - rename()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class FixtureInstance {
+          - fixtureObject : Object
+          + FixtureInstance()
+          + toString()
+          + getFixtureObject()
+          + getFixtureClass()
+          + getSpecificationDescription()
+          + getFixturePathWithoutSuffix()
+          - removeSuffix()
+          + getClassPathRoots()
+          + setupForRun()
+          + beforeSuite()
+          + afterSuite()
+          + beforeSpecification()
+          + afterSpecification()
+          + beforeProcessExample()
+          + beforeExample()
+          + afterExample()
+          + afterProcessExample()
+          + getClassHierarchyParentFirst()
+          - invokeMethods()
+          - invokeMethods()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class FixtureOptionsLoader {
+          + addOptions()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class FixtureRunner {
+          {static} - runResultsCache : RunResultsCache
+          + FixtureRunner()
+          + run()
+          - printResultSummary()
+          + getConcordion()
+          + run()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class FixtureSpecificationMapper {
+          {static} - serviceLoader : ServiceLoader<TestFrameworkProvider>
+          {static} + toSpecificationResource()
+          {static} + removeSuffixFromFixtureName()
+          {static} + findFixtureClass()
+          {static} - getFixtureClass()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class FixtureType {
+          # fixtureClass : Class<?>
+          - classHierarchyParentFirst : ArrayList<Class<?>>
+          + FixtureType()
+          + declaresFullOGNL()
+          + declaresFailFast()
+          + declaresResources()
+          + getDeclaredFailFastExceptions()
+          + declaresStatus()
+          + getDeclaredImplementationStatus()
+          # getClassHierarchyParentFirst()
+          + getDeclaredConcordionOptionsParentFirst()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      enum ImplementationStatusChecker {
+        UNIMPLEMENTED
+        EXPECTED_TO_FAIL
+        EXPECTED_TO_PASS
+        implementationStatus
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class InvalidExpressionException {
+          {static} - serialVersionUID : long
+          - t : Throwable
+          + InvalidExpressionException()
+          + InvalidExpressionException()
+          + getStackTrace()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class ListEntry {
+          + ListEntry()
+          + getElement()
+          + isItem()
+          + isList()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class ListSupport {
+          + ListSupport()
+          + getListEntries()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class MultiPattern {
+          - patterns : List<Pattern>
+          - MultiPattern()
+          + matches()
+          {static} + fromRegularExpressions()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class OgnlEvaluator {
+          - rootObject : Object
+          - ognlContext : OgnlContext
+          + OgnlEvaluator()
+          + evaluate()
+          - invalidExpressionException()
+          + setVariable()
+          - assertStartsWithHash()
+          - putVariable()
+          + getVariable()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class OgnlEvaluatorFactory {
+          + createEvaluator()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      interface ParameterSupplier {
+          {abstract} + getValueForParameter()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class ParsingException {
+          {static} - serialVersionUID : long
+          - sourceDescription : String
+          + ParsingException()
+          + ParsingException()
+          + getMessage()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class ResourceFinder {
+          - includeDefaultStyling : boolean
+          + includeDefaultStyling()
+          + ResourceFinder()
+          + getResourcesToCopy()
+          - isAnnotationDeclared()
+          - getResourcesToAdd()
+          - findMatchingFiles()
+          - getAbsoluteSearchPath()
+          - isSearchRoot()
+          - getPackageName()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class WildcardFilter {
+          ~ r : Pattern
+          + WildcardFilter()
+          + accept()
+          - createRegexFromGlob()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class ResourceToCopy {
+          # fileName : String
+          + ResourceToCopy()
+          + getResourceName()
+          + getName()
+          + isStyleSheet()
+          + isScript()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class Row {
+          ~ Row()
+          + isHeaderRow()
+          + getElement()
+          + getCells()
+          + getIndexOfCell()
+          + deepClone()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      interface RunOutput {
+          {abstract} + getActualResultSummary()
+          {abstract} + getModifiedResultSummary()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class SimpleEvaluator {
+          {static} - METHOD_NAME_PATTERN : String
+          {static} - PROPERTY_NAME_PATTERN : String
+          {static} - STRING_PATTERN : String
+          {static} - LHS_VARIABLE_PATTERN : String
+          {static} - RHS_VARIABLE_PATTERN : String
+          {static} - METHOD_CALL_PARAMS : String
+          {static} - METHOD_CALL_NO_PARAMS : String
+          {static} - TERNARY_STRING_RESULT : String
+          {static} - EVALUATION_PATTERNS : MultiPattern
+          {static} - SET_VARIABLE_PATTERNS : MultiPattern
+          + SimpleEvaluator()
+          + evaluate()
+          + setVariable()
+          {static} + validateEvaluationExpression()
+          {static} + validateSetVariableExpression()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class SimpleEvaluatorFactory {
+          + createEvaluator()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class SingleParameterSupplier {
+          - methodAnnotationClass : Class<? extends Annotation>
+          - parameterAnnotation : Class<? extends Annotation>
+          - parameterValue : Object
+          + SingleParameterSupplier()
+          + getValueForParameter()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class SingleResultSummary {
+          + SingleResultSummary()
+          + SingleResultSummary()
+          + SingleResultSummary()
+          + getResult()
+          + equals()
+          + hashCode()
+          + assertIsSatisfied()
+          + hasExceptions()
+          + getSuccessCount()
+          + getFailureCount()
+          + getExceptionCount()
+          + getIgnoredCount()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      interface SpecificationDescriber {
+          {abstract} + getDescription()
+          {abstract} + getDescription()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class SpecificationToSpecificationByExampleAdaptor {
+          - testDescription : String
+          + SpecificationToSpecificationByExampleAdaptor()
+          + finish()
+          + process()
+          + setFixture()
+          + processExample()
+          + getExampleNames()
+          + hasExampleCommandNodes()
+          + getSpecificationDescription()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class SpecificationType {
+          - typeSuffix : String
+          + SpecificationType()
+          + getTypeSuffix()
+          + getConverter()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class SummarizingResultRecorder {
+          - recordedResults : List<Result>
+          - forExample : boolean
+          + SummarizingResultRecorder()
+          + SummarizingResultRecorder()
+          + record()
+          - recordMultipleResults()
+          + record()
+          + assertIsSatisfied()
+          + hasExceptions()
+          - getCount()
+          + getExceptionCount()
+          + getFailureCount()
+          + getSuccessCount()
+          + getIgnoredCount()
+          + recordFailFastException()
+          + getFailFastException()
+          + setFailFastException()
+          + setForExample()
+          + isForExample()
+          + getTotalCount()
+          + reset()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class SystemPropertiesRunnerFactory {
+          + createRunner()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class Table {
+          + Table()
+          + getLastHeaderRow()
+          - getHeaderRows()
+          + getDetailRows()
+          - getRows()
+          + addDetailRow()
+          - getColumnCount()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class TableSupport {
+          - commandCallByColumn : Map<Integer, CommandCall>
+          - overrides : Map<Integer, Element>
+          + TableSupport()
+          + getColumnCount()
+          + getDetailRows()
+          + copyCommandCallsTo()
+          - populateCommandCallByColumnMap()
+          + getLastHeaderRow()
+          + addDetailRow()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class UnableToBuildConcordionException {
+          {static} - serialVersionUID : long
+          + UnableToBuildConcordionException()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class XMLParser {
+          + parse()
+          + parse()
+          {static} + parse()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class XMLSpecification {
+          {static} + OUTER_EXAMPLE_NAME : String
+          {static} + OUTER_EXAMPLE_SUFFIX : String
+          - testDescription : String
+          - examples : List<ExampleCommandCall>
+          - beforeExamples : List<CommandCall>
+          - specificationDescription : String
+          + XMLSpecification()
+          + processNode()
+          + process()
+          + setFixture()
+          + processExample()
+          + hasExampleCommandNodes()
+          + getSpecificationDescription()
+          + getExampleNames()
+          + finish()
+      }
+    }
+  }
+  
+
+  package org.concordion {
+    package org.concordion.internal {
+      class XMLSpecificationReader {
+          + XMLSpecificationReader()
+          + readSpecification()
+          + canFindSpecification()
+          + setSpecificationConverter()
+          + setCopySourceHtmlTarget()
+          - asHtmlStream()
+          - asString()
+          - copySourceHtml()
+      }
+    }
+  }
+  
+
+  AbstractResultSummary -up-|> ResultSummary
+  AbstractResultSummary o-- ImplementationStatus : implementationStatus
+  BooleanExpectationChecker -up-|> ExpectationChecker
+  BrowserStyleWhitespaceComparator -up-|> Comparator
+  BrowserStyleWhitespaceComparator o-- ChainOfExpectationCheckers : chainOfCheckers
+  CatchAllExpectationChecker -up-|> ExpectationChecker
+  ChainOfExpectationCheckers -up-|> ExpectationChecker
+  ClassNameAndTypeBasedSpecificationLocator -up-|> SpecificationLocatorWithType
+  ClassNameAndTypeBasedSpecificationLocator -up-|> ClassNameBasedSpecificationLocator
+  ClassNameBasedSpecificationLocator -up-|> SpecificationLocator
+  ClassPathSource -up-|> Source
+  CommandRegistry -up-|> CommandFactory
+  ConcordionAssertionError o-- ResultSummary : rs
+  ConcordionBuilder -up-|> ConcordionExtender
+  ConcordionBuilder o-- SpecificationLocator : specificationLocator
+  ConcordionBuilder o-- Target : target
+  ConcordionBuilder o-- CommandRegistry : commandRegistry
+  ConcordionBuilder o-- DocumentParser : documentParser
+  ConcordionBuilder o-- SpecificationReader : specificationReader
+  ConcordionBuilder o-- EvaluatorFactory : evaluatorFactory
+  ConcordionBuilder o-- SpecificationCommand : specificationCommand
+  ConcordionBuilder o-- AssertEqualsCommand : assertEqualsCommand
+  ConcordionBuilder o-- AssertTrueCommand : assertTrueCommand
+  ConcordionBuilder o-- AssertFalseCommand : assertFalseCommand
+  ConcordionBuilder o-- ExampleCommand : exampleCommand
+  ConcordionBuilder o-- ExecuteCommand : executeCommand
+  ConcordionBuilder o-- SetCommand : setCommand
+  ConcordionBuilder o-- RunCommand : runCommand
+  ConcordionBuilder o-- VerifyRowsCommand : verifyRowsCommand
+  ConcordionBuilder o-- EchoCommand : echoCommand
+  ConcordionBuilder o-- ThrowableCaughtPublisher : throwableListenerPublisher
+  ConcordionBuilder o-- Fixture : fixture
+  ConcordionBuilder o-- MarkdownConverter : markdownConverter
+  ConcordionBuilder o-- XhtmlConverter : xhtmlConverter
+  ConcordionBuilder o-- FileTarget : copySourceHtmlTarget
+  ConcordionBuilder o-- SpecificationProcessingListener : pageFooterRenderer
+  ConcordionBuilder o-- BreadcrumbRenderer : breadcrumbRenderer
+  ConcordionBuilder o-- RunnerFactory : runnerFactory
+  DocumentParser o-- CommandFactory : commandFactory
+  FileTarget -up-|> Target
+  FileTargetWithSuffix -up-|> Target
+  FileTargetWithSuffix o-- FileTarget : target
+  FixtureInstance -up-|> Fixture
+  FixtureInstance -up-|> FixtureDeclarations
+  FixtureInstance -up-|> FixtureType
+  FixtureInstance o-- ScopedFieldStore : scopedFieldStore
+  FixtureRunner o-- Concordion : concordion
+  FixtureType -up-|> FixtureDeclarations
+  ImplementationStatusChecker o-- ImplementationStatus : implementationStatus
+  ListEntry o-- Element : listElement
+  ListSupport o-- CommandCall : listCommandCall
+  OgnlEvaluator -up-|> Evaluator
+  OgnlEvaluatorFactory -up-|> EvaluatorFactory
+  ResourceFinder o-- Fixture : fixture
+  ResourceFinder +-down- WildcardFilter
+  WildcardFilter -up-|> FilenameFilter
+  ResourceToCopy o-- InsertType : insertType
+  Row o-- Element : rowElement
+  SimpleEvaluator -up-|> OgnlEvaluator
+  SimpleEvaluatorFactory -up-|> EvaluatorFactory
+  SingleParameterSupplier -up-|> ParameterSupplier
+  SingleResultSummary -up-|> ResultSummary
+  SingleResultSummary -up-|> AbstractResultSummary
+  SingleResultSummary o-- Result : result
+  SpecificationToSpecificationByExampleAdaptor -up-|> SpecificationByExample
+  SpecificationToSpecificationByExampleAdaptor o-- Specification : specification
+  SpecificationType o-- SpecificationConverter : converter
+  SummarizingResultRecorder -up-|> ResultRecorder
+  SummarizingResultRecorder -up-|> ResultSummary
+  SummarizingResultRecorder -up-|> AbstractResultSummary
+  SummarizingResultRecorder o-- FailFastException : failFastException
+  SystemPropertiesRunnerFactory -up-|> RunnerFactory
+  Table o-- Element : tableElement
+  TableSupport o-- CommandCall : tableCommandCall
+  TableSupport o-- Table : table
+  XMLSpecification -up-|> SpecificationByExample
+  XMLSpecification o-- CommandCall : rootCommandNode
+  XMLSpecification o-- SpecificationCommand : specificationCommand
+  XMLSpecificationReader -up-|> SpecificationReader
+  XMLSpecificationReader o-- Source : specificationSource
+  XMLSpecificationReader o-- XMLParser : xmlParser
+  XMLSpecificationReader o-- DocumentParser : documentParser
+  XMLSpecificationReader o-- SpecificationConverter : specificationConverter
+  XMLSpecificationReader o-- Target : copySourceHtmlTarget
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
